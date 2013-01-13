@@ -3,7 +3,7 @@ layout: post
 title: "What Python installations are scientists using?"
 date: 2013-01-13 10:10
 comments: true
-categories: 
+categories: Python
 ---
 
 Back in November 2012, I
@@ -22,6 +22,8 @@ raw data. First, I should mention that given my area of research and networks,
 the only community I obtained significant data are Astronomers, so the results
 I present here only include these (though I also provide the raw data for the
 remaining users for anyone interested).
+
+<!-- more -->
 
 Before I show the results, I just want to make it clear that I am not claiming
 that the results are a true sampling of Python user levels. I advertised the
