@@ -3,7 +3,9 @@ layout: post
 title: "What Python installations are scientists using?"
 date: 2013-01-13 10:10
 comments: true
-categories: Python
+categories:
+- Python
+- Distribution
 ---
 
 Back in November 2012, I
@@ -47,7 +49,7 @@ which point the rate of responses had gone down to less than one a day).
 Python Versions
 ---------------
 
-{% img center images/python_versions.png %}
+{% img center /images/python_versions.png %}
 
 As shown above, an overwhelming 80% of Astronomers use Python 2.7, and almost
 15% use Python 2.6. Almost no-one uses Python 3.x for production work yet,
@@ -60,7 +62,7 @@ next year (more on that in future blog posts).
 Numpy Versions
 --------------
 
-{% img center images/numpy_versions.png %}
+{% img center /images/numpy_versions.png %}
 
 In the above plot, *dev* includes anything that is a developer version more
 recent than the 1.6.2 release (which was the latest stable release at the time
@@ -72,7 +74,7 @@ are using Numpy 1.5.x or more recent.
 Scipy Versions
 --------------
 
-{% img center images/scipy_versions.png %}
+{% img center /images/scipy_versions.png %}
 
 In the above plot, *dev* includes anything that is a developer version more
 recent than the stable 0.11 release (which was the latest stable release at
@@ -98,7 +100,7 @@ We now get to some very interesting statistics - how users install Python and
 dependencies. While Python is awesome in many respects, installation is
 probably the biggest hurdle that users have to jump to get started.
 
-{% img center images/install_methods.png %}
+{% img center /images/install_methods.png %}
 
 I'm not sure if anyone's quantitatively looked at this before, but this was
 the first time that I really got a sense for all the different ways that one
