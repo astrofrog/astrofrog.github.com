@@ -9,9 +9,9 @@ categories:
 ---
 
 Back in November 2012, I
-[invited](https://twitter.com/astrofrog/status/269743084215103488) Python
-users in science to fill out a survey to find out what Python, Numpy, and
-Scipy versions they were using, and how they maintain their installation. My
+[asked](https://twitter.com/astrofrog/status/269743084215103488) Python
+users in Science to fill out a survey to find out what [Python](http://www.python.org), [Numpy](http://www.numpy.org), and
+[Scipy](http://www.scipy.org) versions they were using, and how they maintain their installation. My
 motivation for this was to collect quantitative information to inform
 discussions amongst developers regarding which versions to support, when those
 discussions are based only on guessing and personal experience. In particular,
@@ -122,17 +122,15 @@ Python and MacPorts [here](http://astrofrog.github.com/macports-python/).
 *Official Installers* refers to the MacOS X disk images, Linux RPMs, and
 Windows installers that are provided by some projects (including Python
 itself, Numpy, and Scipy).
-*Admins* refers to System Administrators - these are users who are at
-institutions where the sysadmins have taken care of setting up the Python
-environment.
+*Admins* means that Python and the packages were installed by System Administrators.
 [*SciSoft*](http://www.eso.org/sci/software/scisoft/) and [*STScI Python*](http://www.stsci.edu/institute/software_hardware/pyraf/stsci_python/current/stsci-python-download) are two Astronomy-specific software bundles.
 And [*ActivePython*](http://www.activestate.com/activepython) is similar to
 EPD, but where binary packages are downloaded on-the-fly as needed.
 
-Of course, some of these are not orthogonal, because e.g. ``easy_install`` can
-be used to install additional packages not in EPD for example. But the
-responses from the survey refer to how the main packages (Python, Numpy, and
-Scipy) were installed.
+Of course, some of these are not orthogonal, because for example
+``easy_install`` can be used to install additional packages not in EPD. But
+the responses from the survey refer to how the main packages (Python, Numpy,
+and Scipy) were installed.
 
 What can we take away from the results?
 
@@ -148,7 +146,7 @@ What can we take away from the results?
 
 * 'Custom' Astronomy-specific bundles (SciSoft and STScI Python) are not as
   widely used, which indicates that more effort should be put in getting
-  packages in existing package managers than building new software stacks.
+  packages in existing package managers than building new software bundles.
 
 * A small fraction (around 7%) have no idea how they installed Python and
   other packages, so they may run into issues when they try and upgrade in
