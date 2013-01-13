@@ -20,20 +20,21 @@ project regarding whether we should drop support for Numpy 1.4 (which
 motivated this study).
 
 In this post, I'll give an overview of the results, as well as access to the
-raw data. First, I should mention that given my area of research and networks,
-the only community I obtained significant data are Astronomers, so the results
-I present here only include these (though I also provide the raw data for the
-remaining users for anyone interested).
+(anonymized) raw data. First, I should mention that given my area of research
+and networks, the only community I obtained significant data are Astronomers,
+so the results I present here only include these (though I also provide the
+raw data for the remaining users for anyone interested).
 
 <!-- more -->
 
 Before I show the results, I just want to make it clear that I am not claiming
 that the results are a true sampling of Python user levels. I advertised the
 poll via Twitter, a couple of Python mailing lists, and the Facebook group for
-Astronomers. I delayed the announcement in each case, so that there may be
-some useful information about the Python installations contained in the data
-that I won't cover here. If anyone is interested about when the announcements
-were made to correlate with response peaks in the data, please let me know!
+Astronomers. The survey was announced on different days on Twitter and
+Facebook, so there may be some useful information about the typical Python
+installations of Twitter vs Facebook users buried in the data that I won't
+cover here. If anyone is interested about when the announcements were made, to
+correlate with response peaks in the data, please let me know!
 
 With that out of the way... let's look at the results!
 
@@ -104,20 +105,40 @@ probably the biggest hurdle that users have to jump to get started.
 
 I'm not sure if anyone's quantitatively looked at this before, but this was
 the first time that I really got a sense for all the different ways that one
-can maintain a Python installation, and which methods are the most popular. I
-should note that *Source* includes responses that indicated ``pip`` and
-``easy_install``. And of course, some of these are not orthogonal, because
-e.g. ``easy_install`` can be used to install additional packages not in EPD
-for example. Nevertheless, we can make some interesting observations:
+can maintain a Python installation, and which methods are the most popular. The options shown above are described below:
+
+*Linux Manager* means linux package managers (``apt-get``, ``yum``, etc.)
+*Source* means an installation from the source code. This means either
+downloading the source code and running ``python setup.py install``, or using
+``pip install`` or ``easy_install``.
+*EPD* stands for the
+  [Enthought Python Distribution](http://www.enthought.com/products/epd.php),
+which is a scientific Python bundle that includes e.g. Numpy, Scipy,
+Matplotlib, and many other packages. It is free for users at academic
+institutions.
+[*MacPorts*](http://www.macports.org) is one of the most widely used package
+managers on Mac, and I have provided instructions for getting set up with
+Python and MacPorts [here](http://astrofrog.github.com/macports-python/).
+*Official Installers* refers to the MacOS X disk images, Linux RPMs, and
+Windows installers that are provided by some projects (including Python
+itself, Numpy, and Scipy).
+*Admins* refers to System Administrators - these are users who are at
+institutions where the sysadmins have taken care of setting up the Python
+environment.
+[*SciSoft*](http://www.eso.org/sci/software/scisoft/) and [*STScI Python*](http://www.stsci.edu/institute/software_hardware/pyraf/stsci_python/current/stsci-python-download) are two Astronomy-specific software bundles.
+And [*ActivePython*](http://www.activestate.com/activepython) is similar to
+EPD, but where binary packages are downloaded on-the-fly as needed.
+
+Of course, some of these are not orthogonal, because e.g. ``easy_install`` can
+be used to install additional packages not in EPD for example. But the
+responses from the survey refer to how the main packages (Python, Numpy, and
+Scipy) were installed.
+
+What can we take away from the results?
 
 * If we combine the Linux Package Managers and MacPorts (one of the Mac
-  Package Managers), this amounts to around 40% of installations, the single
-  largest group.
-
-* A small fraction (around 7%) have no idea how they installed Python and
-  other packages, so they may run into issues when they try and upgrade in
-  future. If you install Python for someone, please explain to them what you
-  are doing and how they can update packages in future!
+  Package Managers) into a more general *Package Managers* category, this
+  amounts to around 40% of users, the single largest group.
 
 * Only a small fraction of people use the official binary installers, with
   many more people installing from source. This was surprising to me, given
@@ -129,32 +150,44 @@ for example. Nevertheless, we can make some interesting observations:
   widely used, which indicates that more effort should be put in getting
   packages in existing package managers than building new software stacks.
 
+* A small fraction (around 7%) have no idea how they installed Python and
+  other packages, so they may run into issues when they try and upgrade in
+  future. If you install Python for someone, please explain to them what you
+  are doing and how they can update packages in future!
+  
+I personally feel that we should encourage users to install Python and
+whatever dependencies are available from package managers. Of course, in some
+cases users don't have root access, but this generally means that they have
+sysadmins, so in those cases, the best option is still for the sysadmins to
+install the main Python packages via package managers.
+
 Summary
 -------
 
 To me, one of the most interesting results is that a large number of people
 have a reasonably up-to-date installation, with Python 2.7 and Numpy 1.6.x,
 and I imagine that the Python 2.7 peak is here to stay, given that the
-transition to Python 3 will be slow. Supporting only Python 2.6 and above
-seems like a sensible choice at this stage (and makes life easier for
-developers), and given the imminent release of Numpy 1.7.0, I think that
-software developers can start thinking about dropping support for Numpy 1.4 in
-the near future. For Scipy, things are a little more difficult, given the
-broad spread of versions, so developers should ensure that they know what
-versions they are implicitly supporting, and to check what version users have
-installed.
+transition to Python 3 will be slow.
 
-Finally, I think the most important thing for Python packages in terms of
-installation is to ensure that they are included in package managers. Even if
-it is easy to install packages via ``pip`` or ``easy_install`` in some cases,
-putting packages in package managers ensures that users will more likely stay
-up-to-date with the latest versions.
+For developers, supporting only Python 2.6 and above seems like a sensible
+choice at this stage (a decision we made within Astropy), and given the
+imminent release of Numpy 1.7.0, I think that developers can start thinking
+about dropping support for Numpy 1.4 in the near future. For Scipy, things are
+a little more difficult, given the broad spread of versions, so developers
+should ensure that they know what versions they are implicitly supporting, and
+to check what version users have installed.
 
-There is much more information still contained in the data (for example, some
-of the above points can be correlated - do the people who do not know how they
-installed Python correlate with the older versions?). For anyone who is
-interested in looking at the data, I've placed the files and the scripts I
-used to make the above plots in a GitHub repository
+In terms of installation method, I think it's very important to ensure that
+packages are included in package managers. Even if it is easy to install
+packages via ``pip`` or ``easy_install`` in some cases, putting packages in
+package managers ensures that users will more likely stay up-to-date with the
+most recent versions.
+
+There is more information still contained in the data than I covered here (for
+example, some of the above points can be correlated - do the people who do not
+know how they installed Python correlate with the older versions?). For anyone
+who is interested in looking at the data, I've placed the files and the
+scripts I used to make the above plots in a GitHub repository
 [here](https://github.com/astrofrog/python-versions-survey).
 
 If you have any thoughts about the results, or find anything interesting in
