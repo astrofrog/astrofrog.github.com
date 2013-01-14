@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Python | .py in the sky]]></title>
   <link href="http://astrofrog.github.com/blog/categories/python/atom.xml" rel="self"/>
   <link href="http://astrofrog.github.com/"/>
-  <updated>2013-01-14T11:09:31+01:00</updated>
+  <updated>2013-01-14T11:15:46+01:00</updated>
   <id>http://astrofrog.github.com/</id>
   <author>
     <name><![CDATA[Thomas Robitaille]]></name>
@@ -21,13 +21,13 @@
     <content type="html"><![CDATA[<p>Back in November 2012, I
 <a href="https://twitter.com/astrofrog/status/269743084215103488">asked</a> Python
 users in Science to fill out a survey to find out what <a href="http://www.python.org">Python</a>, <a href="http://www.numpy.org">Numpy</a>, and
-<a href="http://www.scipy.org">Scipy</a> versions they were using, and how they maintain their installation. My
-motivation for this was to collect quantitative information to inform
-discussions amongst developers regarding which versions to support, when those
-discussions are based only on guessing and personal experience. In particular,
-there has been some discussion in the <a href="http://www.astropy.org">Astropy</a>
-project regarding whether we should drop support for Numpy 1.4 (which
-motivated this study).</p>
+<a href="http://www.scipy.org">Scipy</a> versions they were using, and how they maintain their installation. My motivation for this was to collect quantitative
+information to inform discussions amongst developers regarding which versions
+to support, because those discussions are usually based only on guessing and
+personal experience. In particular, there has been some discussion in the
+<a href="http://www.astropy.org">Astropy</a> project regarding whether we should drop
+support for Numpy 1.4, but we had no quantitative information about whether
+this would affect many users (which motivated this study).</p>
 
 <p>In this post, I'll give an overview of the results, as well as access to the
 (anonymized) raw data. First, I should mention that given my area of research
