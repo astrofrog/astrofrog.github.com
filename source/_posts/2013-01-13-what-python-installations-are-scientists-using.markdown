@@ -11,13 +11,13 @@ categories:
 Back in November 2012, I
 [asked](https://twitter.com/astrofrog/status/269743084215103488) Python
 users in Science to fill out a survey to find out what [Python](http://www.python.org), [Numpy](http://www.numpy.org), and
-[Scipy](http://www.scipy.org) versions they were using, and how they maintain their installation. My
-motivation for this was to collect quantitative information to inform
-discussions amongst developers regarding which versions to support, when those
-discussions are based only on guessing and personal experience. In particular,
-there has been some discussion in the [Astropy](http://www.astropy.org)
-project regarding whether we should drop support for Numpy 1.4 (which
-motivated this study).
+[Scipy](http://www.scipy.org) versions they were using, and how they maintain their installation. My motivation for this was to collect quantitative
+information to inform discussions amongst developers regarding which versions
+to support, because those discussions are usually based only on guessing and
+personal experience. In particular, there has been some discussion in the
+[Astropy](http://www.astropy.org) project regarding whether we should drop
+support for Numpy 1.4, but we had no quantitative information about whether
+this would affect many users (which motivated this study).
 
 In this post, I'll give an overview of the results, as well as access to the
 (anonymized) raw data. First, I should mention that given my area of research
@@ -81,7 +81,8 @@ In the above plot, *dev* includes anything that is a developer version more
 recent than the stable 0.11 release (which was the latest stable release at
 the time of the poll). Unlike the Python and Numpy versions, which are almost
 exclusively dominated by two versions, the Scipy versions show a larger
-spread, with the most popular version, 0.10.x, representing only 45% of users.
+spread, with the most popular version, 0.10.x, representing less than 45% of
+users.
 
 I originally thought that Scipy released more often than Numpy, and this would
 explain the difference, but it seems that both projects have been releasing at
@@ -144,9 +145,9 @@ What can we take away from the results?
   the official installers. I think this is down to the fact that this is not a
   well-documented installation procedure, and is platform dependent.
 
-* 'Custom' Astronomy-specific bundles (SciSoft and STScI Python) are not as
-  widely used, which indicates that more effort should be put in getting
-  packages in existing package managers than building new software bundles.
+* Astronomy-specific bundles (SciSoft and STScI Python) are not as widely
+  used, which indicates that more effort should be put in getting packages in
+  existing package managers than building new software bundles.
 
 * A small fraction (around 7%) have no idea how they installed Python and
   other packages, so they may run into issues when they try and upgrade in
