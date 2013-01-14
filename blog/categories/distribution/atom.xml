@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Distribution | .py in the sky]]></title>
   <link href="http://astrofrog.github.com/blog/categories/distribution/atom.xml" rel="self"/>
   <link href="http://astrofrog.github.com/"/>
-  <updated>2013-01-14T11:15:46+01:00</updated>
+  <updated>2013-01-14T11:23:16+01:00</updated>
   <id>http://astrofrog.github.com/</id>
   <author>
     <name><![CDATA[Thomas Robitaille]]></name>
@@ -88,7 +88,8 @@ are using Numpy 1.5.x or more recent.</p>
 recent than the stable 0.11 release (which was the latest stable release at
 the time of the poll). Unlike the Python and Numpy versions, which are almost
 exclusively dominated by two versions, the Scipy versions show a larger
-spread, with the most popular version, 0.10.x, representing only 45% of users.</p>
+spread, with the most popular version, 0.10.x, representing less than 45% of
+users.</p>
 
 <p>I originally thought that Scipy released more often than Numpy, and this would
 explain the difference, but it seems that both projects have been releasing at
@@ -149,9 +150,9 @@ many more people installing from source. This was surprising to me, given
 how quick/easy it is to install Python, Numpy, Scipy, and Matplotlib using
 the official installers. I think this is down to the fact that this is not a
 well-documented installation procedure, and is platform dependent.</p></li>
-<li><p>'Custom' Astronomy-specific bundles (SciSoft and STScI Python) are not as
-widely used, which indicates that more effort should be put in getting
-packages in existing package managers than building new software bundles.</p></li>
+<li><p>Astronomy-specific bundles (SciSoft and STScI Python) are not as widely
+used, which indicates that more effort should be put in getting packages in
+existing package managers than building new software bundles.</p></li>
 <li><p>A small fraction (around 7%) have no idea how they installed Python and
 other packages, so they may run into issues when they try and upgrade in
 future. If you install Python for someone, please explain to them what you
