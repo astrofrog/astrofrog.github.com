@@ -3,28 +3,30 @@ layout: post
 title: "How to conduct a full code review on GitHub"
 date: 2013-04-10 13:38
 comments: true
-categories: 
+categories:
+- Git
+- GitHub
+- Code Review
 ---
 
-Why we want to do it
---------------------
+Why we might want to do it
+--------------------------
 
-I'm a [GitHub](http://www.github.com) addict, to the point where I don't
-understand/remember how we got anything done collaboratively before it
-existed. I'm involved in a number of projects, including
-[Astropy](http://www.astropy.org), which would not be where they are today if
-pull requests had not existed... The ability to comment on code line-by-line,
-having conversations, updating the pull requests, and merging them with a
-single click is in my mind so much more rewarding and productive than having
-to comment on a patch in an email discussion.
+I think it's fair to say I'm addicted to using
+[GitHub](http://www.github.com). I've used it so much in the last couple of
+years that I don't understand/remember how we got any serious collaborative
+coding done before. In particular, the ability to comment on code
+line-by-line, having conversations, updating the pull requests, and merging
+them with a single click is in my mind so much more rewarding and productive
+than having to comment on a patch in an email discussion.
 
-But there's one thing that's been bugging me lately. I occasionally want to do
-a full review of a package that someone else has written, and comment on
-various parts of the code. While it is possible to leave line-by-line comments
-on a commit-by-commit basis, GitHub does not provide an official way to review
-the latest *full* version of a file or package.
+However, I occasionally want to do a full review of a package that someone
+else has written, and comment on various parts of the code. While it is
+possible to leave line-by-line comments on a commit-by-commit basis, GitHub
+does not provide an official way to review the latest *full* version of a file
+or package.
 
-There are different ways to conduct a full code review that I can think of:
+There are a few ways to conduct a full code review that I can think of:
 
 1. Browse through the files, on GitHub or locally, and open new issues
   for anything we would like to comment on, copying and pasting the relevant
@@ -41,8 +43,8 @@ There are different ways to conduct a full code review that I can think of:
   this post, I describe one way to do this. There may be more elegant ways, so
   please let me know if you have any suggestions!
 
-How we can do it
-----------------
+How to do it
+------------
 
 Ideally, one could simply create an empty branch on GitHub, then set up a pull
 request from ``master`` (or whatever branch you want to review) onto the empty
@@ -62,13 +64,13 @@ hash for the first commit in the repository, which you can do with:
 
     $ git rev-list --all | tail -1
     ec2287e5837386c54fbd082021530aa18c0dcf18
-    
+
 In the example above the hash is ``ec2287e5837386c54fbd082021530aa18c0dcf18``,
 but this will be different for you. Now, create an empty branch containing
 only that commit:
 
     $ git branch empty ec2287e5837386c54fbd082021530aa18c0dcf18
-    
+
 This will create, but not switch to, the empty branch. Next push your
 ``empty`` branch to GitHub:
 
@@ -191,4 +193,4 @@ As you can see, if the first commit in your repository is unimportant, things
 are actually pretty straightforward. I'd love to hear if anyone has a better
 way to deal with the case where we want to review all commits, including the
 first. Finally, if any GitHub employees are reading this - please make it
-easier for people to conduct full reviews!
+easier for people to conduct full reviews! :)
