@@ -38,10 +38,11 @@ There are a few ways to conduct a full code review that I can think of:
   want to comment on a chunk of code that was the result of several commits in
   which case this method breaks down.
 
-3. Leverage the pull request interface, with a little git-*fu*, to conduct a
-  proper full code review. This is in my opinion the best approach, and in
-  this post, I describe one way to do this. There may be more elegant ways, so
-  please let me know if you have any suggestions!
+3. Leverage the [pull request](https://help.github.com/articles/using-pull-requests)
+  interface, with a little git-*fu*, to conduct a proper full code review.
+  This is in my opinion the best approach, and in this post, I describe one
+  way to do this. There may be more elegant ways, so please let me know if you
+  have any suggestions!
 
 How to do it
 ------------
