@@ -51,21 +51,26 @@ branches on GitHub - instead, we need our empty branch to have at least one
 commit, which needs to match the first commit of the branch we want to review
 (otherwise GitHub will complain that there is no common history).
 
-So how we proceed depends on whether the first commit contains code that needs to be reviewed, or if it is unimportant (for example, a lot of repositories start with the addition of an empty README file).
+So how we proceed depends on whether the first commit contains code that needs
+to be reviewed, or if it is unimportant (for example, a lot of repositories
+start with the addition of an empty README file).
 
 ### If the first commit is unimportant...
 
-... then the situation is fairly easy. You first need to find out the commit hash
-for the first commit in the repository, which you can do with:
+... then the situation is fairly easy. You first need to find out the commit
+hash for the first commit in the repository, which you can do with:
 
     $ git rev-list --all | tail -1
     ec2287e5837386c54fbd082021530aa18c0dcf18
     
-In the example above the hash is ``ec2287e5837386c54fbd082021530aa18c0dcf18``, but this will be different for you. Now, create an empty branch containing only that commit:
+In the example above the hash is ``ec2287e5837386c54fbd082021530aa18c0dcf18``,
+but this will be different for you. Now, create an empty branch containing
+only that commit:
 
     $ git branch empty ec2287e5837386c54fbd082021530aa18c0dcf18
     
-This will create, but not switch to, the empty branch. Next push your ``empty`` branch to GitHub:
+This will create, but not switch to, the empty branch. Next push your
+``empty`` branch to GitHub:
 
     $ git push origin empty
 
@@ -182,4 +187,8 @@ which should cause the new commits to appear in the pull request.
 Epilogue
 --------
 
-As you can see, if the first commit in your repository is unimportant, things are actually pretty straightforward. I'd love to hear if anyone has a better way to deal with the case where we want to review all commits, including the first. Finally, if any GitHub employees are reading this - please make it easier for people to conduct full reviews!
+As you can see, if the first commit in your repository is unimportant, things
+are actually pretty straightforward. I'd love to hear if anyone has a better
+way to deal with the case where we want to review all commits, including the
+first. Finally, if any GitHub employees are reading this - please make it
+easier for people to conduct full reviews!
