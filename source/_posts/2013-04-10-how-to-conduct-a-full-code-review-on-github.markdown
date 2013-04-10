@@ -120,7 +120,7 @@ added to the branch if we were to commit. However, you don't want to do this,
 so remove all the files in the repository in the current branch by first
 unstaging all the files:
 
-    $ git rm --cached *
+    $ git rm -r --cached *
 
 then removing them all:
 
