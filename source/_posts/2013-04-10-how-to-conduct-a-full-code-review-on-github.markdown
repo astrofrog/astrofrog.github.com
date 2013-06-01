@@ -26,6 +26,8 @@ possible to leave line-by-line comments on a commit-by-commit basis, GitHub
 does not provide an official way to review the latest *full* version of a file
 or package.
 
+<!-- more -->
+
 There are a few ways to conduct a full code review that I can think of:
 
 1. Browse through the files, on GitHub or locally, and open new issues
