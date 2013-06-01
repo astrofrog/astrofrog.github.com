@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Astropy | .py in the sky]]></title>
+  <link href="http://astrofrog.github.com/blog/categories/astropy/atom.xml" rel="self"/>
+  <link href="http://astrofrog.github.com/"/>
+  <updated>2013-06-01T19:51:36+02:00</updated>
+  <id>http://astrofrog.github.com/</id>
+  <author>
+    <name><![CDATA[Thomas Robitaille]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Astropy: Google Summer of Code!]]></title>
+    <link href="http://astrofrog.github.com/blog/2013/05/30/astropy-google-summer-of-code/"/>
+    <updated>2013-05-30T23:40:00+02:00</updated>
+    <id>http://astrofrog.github.com/blog/2013/05/30/astropy-google-summer-of-code</id>
+    <content type="html"><![CDATA[<p><img class="right" src="/images/astropy_logo.png" title="astropy" alt="astropy"></p>
+
+<p>As one of the co-ordinators of the <a href="http://www.astropy.org">Astropy</a> project, I am very happy to announce that two talented students will be joining the Astropy project as part of this year's <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2013">Google Summer of Code (GSoC)</a>!</p>
+
+<p>For anyone not familiar with GSoC, it is a great program that allows students around the world to spend the summer contributing to an open source project (the students receive a stipend from Google for this work). Astropy is participating in GSoC as a sub-organization in the <a href="http://www.python.org/psf/">Python Software Foundation</a> organization.</p>
+
+<!-- more -->
+
+
+<p>The two students that will be working with us this summer are:</p>
+
+<ul>
+<li><p>Madhura Parikh, who will be working on the Astroquery affiliated package. Astroquery aims to provide a Python interface to many web services such as IRSA, SIMBAD, VizieR, and many others. Madhura will be refactoring Astroquery to unify the API, with the aim of a first stable release at the end of the summer.</p></li>
+<li><p>Axel Donath, who will be working on significantly extending the capabilities of the Photutils affiliated package. Photutils aims to provide Python tools to perform aperture and PSF photometry, and the long-term goal is to integrate it into the core Astropy package. Axel will focus on developing the source detection and PSF-fitting functionality which are currently missing.</p></li>
+</ul>
+
+
+<p>Competition for GSoC was tough this year, and there were a number of excellent applications to work with Astropy, so I want to thank all the students who applied to work with us!</p>
+
+<p>The official GSoC mentors for Astropy are Tom Aldcroft, Adam Ginsburg, Wolfgang Kerzendorf, Adrian Price-Whelan, Erik Tollerud, and myself. Throughout the summer, Madhura and Axel will be communicating with the Astropy development team through the astropy-dev list, so if you are interested in either of the projects mentioned above, please feel free to get involved in the discussions! Madhura and Axel will be also be blogging about their experience in GSoC (<a href="http://ping-vyom.blogspot.in/">Madhura's</a> and <a href="http://adonath.github.io/">Axel's</a> blog).</p>
+]]></content>
+  </entry>
+  
+</feed>

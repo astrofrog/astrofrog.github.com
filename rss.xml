@@ -8,6 +8,34 @@
  
     
     <item>
+      <title>Astropy: Google Summer of Code!</title>
+      <description>&lt;p&gt;&lt;img class=&quot;right&quot; src=&quot;http://astrofrog.github.com/images/astropy_logo.png&quot; title=&quot;astropy&quot; alt=&quot;astropy&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;As one of the co-ordinators of the &lt;a href=&quot;http://www.astropy.org&quot;&gt;Astropy&lt;/a&gt; project, I am very happy to announce that two talented students will be joining the Astropy project as part of this year&amp;#8217;s &lt;a href=&quot;http://www.google-melange.com/gsoc/homepage/google/gsoc2013&quot;&gt;Google Summer of Code (GSoC)&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;For anyone not familiar with GSoC, it is a great program that allows students around the world to spend the summer contributing to an open source project (the students receive a stipend from Google for this work). Astropy is participating in GSoC as a sub-organization in the &lt;a href=&quot;http://www.python.org/psf/&quot;&gt;Python Software Foundation&lt;/a&gt; organization.&lt;/p&gt;
+
+&lt;!&#8211; more &#8211;&gt;
+
+
+&lt;p&gt;The two students that will be working with us this summer are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Madhura Parikh, who will be working on the Astroquery affiliated package. Astroquery aims to provide a Python interface to many web services such as IRSA, SIMBAD, VizieR, and many others. Madhura will be refactoring Astroquery to unify the API, with the aim of a first stable release at the end of the summer.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Axel Donath, who will be working on significantly extending the capabilities of the Photutils affiliated package. Photutils aims to provide Python tools to perform aperture and PSF photometry, and the long-term goal is to integrate it into the core Astropy package. Axel will focus on developing the source detection and PSF-fitting functionality which are currently missing.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Competition for GSoC was tough this year, and there were a number of excellent applications to work with Astropy, so I want to thank all the students who applied to work with us!&lt;/p&gt;
+
+&lt;p&gt;The official GSoC mentors for Astropy are Tom Aldcroft, Adam Ginsburg, Wolfgang Kerzendorf, Adrian Price-Whelan, Erik Tollerud, and myself. Throughout the summer, Madhura and Axel will be communicating with the Astropy development team through the astropy-dev list, so if you are interested in either of the projects mentioned above, please feel free to get involved in the discussions! Madhura and Axel will be also be blogging about their experience in GSoC (&lt;a href=&quot;http://ping-vyom.blogspot.in/&quot;&gt;Madhura&amp;#8217;s&lt;/a&gt; and &lt;a href=&quot;http://adonath.github.io/&quot;&gt;Axel&amp;#8217;s&lt;/a&gt; blog).&lt;/p&gt;
+</description>
+      <link>http://astrofrog.github.com/blog/2013/05/30/astropy-google-summer-of-code/</link>
+      <pubDate>2013-05-30T23:40:00+02:00</pubDate>
+      <guid>http://astrofrog.github.com/blog/2013/05/30/astropy-google-summer-of-code</guid>
+    </item>
+    
+    <item>
       <title>How to conduct a full code review on GitHub</title>
       <description>&lt;h2&gt;Why we might want to do it&lt;/h2&gt;
 
@@ -24,6 +52,9 @@ else has written, and comment on various parts of the code. While it is
 possible to leave line-by-line comments on a commit-by-commit basis, GitHub
 does not provide an official way to review the latest &lt;em&gt;full&lt;/em&gt; version of a file
 or package.&lt;/p&gt;
+
+&lt;!&#8211; more &#8211;&gt;
+
 
 &lt;p&gt;There are a few ways to conduct a full code review that I can think of:&lt;/p&gt;
 

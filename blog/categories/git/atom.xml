@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Git | .py in the sky]]></title>
   <link href="http://astrofrog.github.com/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://astrofrog.github.com/"/>
-  <updated>2013-04-10T21:27:38+02:00</updated>
+  <updated>2013-06-01T19:51:36+02:00</updated>
   <id>http://astrofrog.github.com/</id>
   <author>
     <name><![CDATA[Thomas Robitaille]]></name>
@@ -33,6 +33,9 @@ else has written, and comment on various parts of the code. While it is
 possible to leave line-by-line comments on a commit-by-commit basis, GitHub
 does not provide an official way to review the latest <em>full</em> version of a file
 or package.</p>
+
+<!-- more -->
+
 
 <p>There are a few ways to conduct a full code review that I can think of:</p>
 
