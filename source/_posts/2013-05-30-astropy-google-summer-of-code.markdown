@@ -12,7 +12,7 @@ categories:
 
 As one of the co-ordinators of the [Astropy](http://www.astropy.org) project, I am very happy to announce that two talented students will be joining the Astropy project as part of this year's [Google Summer of Code (GSoC)](http://www.google-melange.com/gsoc/homepage/google/gsoc2013)!
 
-For anyone not familiar with GSoC, it is a great program that allows students around the world to spend the summer contributing to an open source project (the students receive a stipend from Google for this work). Astropy is participating in GSoC as a sub-organization in the [Python Software Foundation](http://www.python.org/psf/) organization.
+For anyone not familiar with GSoC, it is a great program that allows students around the world to spend the summer contributing to an open source project (the students receive a stipend from Google for their work). Astropy is participating in GSoC as a sub-organization in the [Python Software Foundation](http://www.python.org/psf/) organization.
 
 <!-- more -->
 
