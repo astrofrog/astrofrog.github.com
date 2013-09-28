@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>.py in the sky</title><link>http://astrofrog.github.com/</link><description></description><atom:link href="http://astrofrog.github.com/rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 30 May 2013 23:40:00 +0200</lastBuildDate><item><title>Astropy: Google Summer of Code!</title><link>http://astrofrog.github.com/blog/2013/05/30/astropy-google-summer-of-code/</link><description>&lt;p&gt;&lt;img class="right" src="http://astrofrog.github.com/images/astropy_logo.png" title="astropy" alt="astropy"&gt;&lt;/p&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>.py in the sky</title><link>http://astrofrog.github.com/</link><description>Musings on Python, Astronomy, and Open Science</description><atom:link href="http://astrofrog.github.com/rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 30 May 2013 23:40:00 +0200</lastBuildDate><item><title>Astropy: Google Summer of Code!</title><link>http://astrofrog.github.com/blog/2013/05/30/astropy-google-summer-of-code/</link><description>&lt;p&gt;&lt;img class="right" src="http://astrofrog.github.com/images/astropy_logo.png" title="astropy" alt="astropy"&gt;&lt;/p&gt;
 &lt;p&gt;As one of the co-ordinators of the &lt;a href="http://www.astropy.org"&gt;Astropy&lt;/a&gt; project, I am very happy to announce that two talented students will be joining the Astropy project as part of this year's &lt;a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2013"&gt;Google Summer of Code (GSoC)&lt;/a&gt;!&lt;/p&gt;
 &lt;p&gt;For anyone not familiar with GSoC, it is a great program that allows students around the world to spend the summer contributing to an open source project (the students receive a stipend from Google for their work). Astropy is participating in GSoC as a sub-organization in the &lt;a href="http://www.python.org/psf/"&gt;Python Software Foundation&lt;/a&gt; organization.&lt;/p&gt;
 
@@ -84,10 +84,10 @@ only that commit:&lt;/p&gt;
 
 &lt;p&gt;Go to your repository on GitHub and click on the 'Pull Request' button at the
 top right of the window:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="python versions" src="http://astrofrog.github.com/images/code_review/pull_request_1.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pull request 1" src="http://astrofrog.github.com/images/code_review/pull_request_1.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Then set it up so that you are pulling the changes from &lt;code&gt;master&lt;/code&gt; into
 &lt;code&gt;empty&lt;/code&gt;, as follows:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="python versions" src="http://astrofrog.github.com/images/code_review/pull_request_2.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pull request 2" src="http://astrofrog.github.com/images/code_review/pull_request_2.png" /&gt;&lt;/p&gt;
 &lt;p&gt;You can now enter a title and message for the pull request, and invite other
 people to comment on the code. If you make changes to &lt;code&gt;master&lt;/code&gt;, you can
 simply push the changes to GitHub as usual:&lt;/p&gt;
@@ -172,10 +172,10 @@ the default. Next push your &lt;code&gt;review&lt;/code&gt; and &lt;code&gt;empt
 
 &lt;p&gt;Go to your repository on GitHub and click on the 'Pull Request' button at the
 top right of the window:&lt;/p&gt;
-&lt;p&gt;{% img center /images/code_review/pull_request_1.png %}&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pull request 1" src="http://astrofrog.github.com/images/code_review/pull_request_1.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Then set it up so that you are pulling the changes from &lt;code&gt;review&lt;/code&gt; into
 &lt;code&gt;empty&lt;/code&gt;, as follows:&lt;/p&gt;
-&lt;p&gt;{% img center /images/code_review/pull_request_3.png %}&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pull request 3" src="http://astrofrog.github.com/images/code_review/pull_request_3.png" /&gt;&lt;/p&gt;
 &lt;p&gt;You can now enter a title and message for the pull request, and invite other
 people to comment on the code. Make sure that you switch back to your
 &lt;code&gt;master&lt;/code&gt; (or other) branch to implement the changes, and if you then want to
