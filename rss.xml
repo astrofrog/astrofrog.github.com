@@ -1,268 +1,213 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
-  <channel>
-    <atom:link rel="hub" href="http://astrofrog.github.com" xmlns:atom="http://www.w3.org/2005/Atom"/>
-    <title>.py in the sky</title>
-    <generator>Octopress</generator>
-    <link>http://astrofrog.github.com</link>
- 
-    
-    <item>
-      <title>Astropy: Google Summer of Code!</title>
-      <description>&lt;p&gt;&lt;img class=&quot;right&quot; src=&quot;http://astrofrog.github.com/images/astropy_logo.png&quot; title=&quot;astropy&quot; alt=&quot;astropy&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;As one of the co-ordinators of the &lt;a href=&quot;http://www.astropy.org&quot;&gt;Astropy&lt;/a&gt; project, I am very happy to announce that two talented students will be joining the Astropy project as part of this year&amp;#8217;s &lt;a href=&quot;http://www.google-melange.com/gsoc/homepage/google/gsoc2013&quot;&gt;Google Summer of Code (GSoC)&lt;/a&gt;!&lt;/p&gt;
-
-&lt;p&gt;For anyone not familiar with GSoC, it is a great program that allows students around the world to spend the summer contributing to an open source project (the students receive a stipend from Google for their work). Astropy is participating in GSoC as a sub-organization in the &lt;a href=&quot;http://www.python.org/psf/&quot;&gt;Python Software Foundation&lt;/a&gt; organization.&lt;/p&gt;
-
-&lt;!&#8211; more &#8211;&gt;
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>.py in the sky</title><link>http://astrofrog.github.com/</link><description></description><atom:link href="http://astrofrog.github.com/rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 30 May 2013 23:40:00 +0200</lastBuildDate><item><title>Astropy: Google Summer of Code!</title><link>http://astrofrog.github.com/blog/2013/05/30/astropy-google-summer-of-code/</link><description>&lt;p&gt;&lt;img class="right" src="http://astrofrog.github.com/images/astropy_logo.png" title="astropy" alt="astropy"&gt;&lt;/p&gt;
+&lt;p&gt;As one of the co-ordinators of the &lt;a href="http://www.astropy.org"&gt;Astropy&lt;/a&gt; project, I am very happy to announce that two talented students will be joining the Astropy project as part of this year's &lt;a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2013"&gt;Google Summer of Code (GSoC)&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;For anyone not familiar with GSoC, it is a great program that allows students around the world to spend the summer contributing to an open source project (the students receive a stipend from Google for their work). Astropy is participating in GSoC as a sub-organization in the &lt;a href="http://www.python.org/psf/"&gt;Python Software Foundation&lt;/a&gt; organization.&lt;/p&gt;
 
 
 &lt;p&gt;The two students that will be working with us this summer are:&lt;/p&gt;
-
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Madhura Parikh, who will be working on the Astroquery affiliated package. Astroquery aims to provide a Python interface to many web services such as IRSA, SIMBAD, VizieR, and many others. Madhura will be refactoring Astroquery to unify the API, with the aim of a first stable release at the end of the summer.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Axel Donath, who will be working on significantly extending the capabilities of the Photutils affiliated package. Photutils aims to provide Python tools to perform aperture and PSF photometry, and the long-term goal is to integrate it into the core Astropy package. Axel will focus on developing the source detection and PSF-fitting functionality which are currently missing.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Madhura Parikh, who will be working on the Astroquery affiliated package. Astroquery aims to provide a Python interface to many web services such as IRSA, SIMBAD, VizieR, and many others. Madhura will be refactoring Astroquery to unify the API, with the aim of a first stable release at the end of the summer.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Axel Donath, who will be working on significantly extending the capabilities of the Photutils affiliated package. Photutils aims to provide Python tools to perform aperture and PSF photometry, and the long-term goal is to integrate it into the core Astropy package. Axel will focus on developing the source detection and PSF-fitting functionality which are currently missing.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
-
 &lt;p&gt;Competition for GSoC was tough this year, and there were a number of excellent applications to work with Astropy, so I want to thank all the students who applied to work with us!&lt;/p&gt;
-
-&lt;p&gt;The official GSoC mentors for Astropy are Tom Aldcroft, Adam Ginsburg, Wolfgang Kerzendorf, Adrian Price-Whelan, Erik Tollerud, and myself. Throughout the summer, Madhura and Axel will be communicating with the Astropy development team through the astropy-dev list, so if you are interested in either of the projects mentioned above, please feel free to get involved in the discussions! Madhura and Axel will be also be blogging about their experience in GSoC (&lt;a href=&quot;http://ping-vyom.blogspot.in/&quot;&gt;Madhura&amp;#8217;s&lt;/a&gt; and &lt;a href=&quot;http://adonath.github.io/&quot;&gt;Axel&amp;#8217;s&lt;/a&gt; blog).&lt;/p&gt;
-</description>
-      <link>http://astrofrog.github.com/blog/2013/05/30/astropy-google-summer-of-code/</link>
-      <pubDate>2013-05-30T23:40:00+02:00</pubDate>
-      <guid>http://astrofrog.github.com/blog/2013/05/30/astropy-google-summer-of-code</guid>
-    </item>
-    
-    <item>
-      <title>How to conduct a full code review on GitHub</title>
-      <description>&lt;h2&gt;Why we might want to do it&lt;/h2&gt;
-
-&lt;p&gt;I think it&amp;#8217;s fair to say I&amp;#8217;m addicted to using
-&lt;a href=&quot;http://www.github.com&quot;&gt;GitHub&lt;/a&gt;. I&amp;#8217;ve used it so much in the last couple of
-years that I don&amp;#8217;t understand/remember how we got any serious collaborative
+&lt;p&gt;The official GSoC mentors for Astropy are Tom Aldcroft, Adam Ginsburg, Wolfgang Kerzendorf, Adrian Price-Whelan, Erik Tollerud, and myself. Throughout the summer, Madhura and Axel will be communicating with the Astropy development team through the astropy-dev list, so if you are interested in either of the projects mentioned above, please feel free to get involved in the discussions! Madhura and Axel will be also be blogging about their experience in GSoC (&lt;a href="http://ping-vyom.blogspot.in/"&gt;Madhura's&lt;/a&gt; and &lt;a href="http://adonath.github.io/"&gt;Axel's&lt;/a&gt; blog).&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thomas Robitaille</dc:creator><pubDate>Thu, 30 May 2013 23:40:00 +0200</pubDate><guid>tag:astrofrog.github.com,2013-05-30:blog/2013/05/30/astropy-google-summer-of-code/</guid><category>Python</category><category>Astropy</category></item><item><title>How to conduct a full code review on GitHub</title><link>http://astrofrog.github.com/blog/2013/04/10/how-to-conduct-a-full-code-review-on-github/</link><description>&lt;h2&gt;Why we might want to do it&lt;/h2&gt;
+&lt;p&gt;I think it's fair to say I'm addicted to using
+&lt;a href="http://www.github.com"&gt;GitHub&lt;/a&gt;. I've used it so much in the last couple of
+years that I don't understand/remember how we got any serious collaborative
 coding done before. In particular, the ability to comment on code
 line-by-line, having conversations, updating the pull requests, and merging
 them with a single click is in my mind so much more rewarding and productive
 than having to comment on a patch in an email discussion.&lt;/p&gt;
-
 &lt;p&gt;However, I occasionally want to do a full review of a package that someone
 else has written, and comment on various parts of the code. While it is
 possible to leave line-by-line comments on a commit-by-commit basis, GitHub
 does not provide an official way to review the latest &lt;em&gt;full&lt;/em&gt; version of a file
 or package.&lt;/p&gt;
 
-&lt;!&#8211; more &#8211;&gt;
-
 
 &lt;p&gt;There are a few ways to conduct a full code review that I can think of:&lt;/p&gt;
-
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Browse through the files, on GitHub or locally, and open new issues
-for anything we would like to comment on, copying and pasting the relevant
-code. Not ideal if we want to comment on 20-30 chunks of code or more!&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Browse through the files on GitHub, and if we see a line we want to comment
-on, we can go to the &lt;em&gt;Blame&lt;/em&gt; tab, and then find the last commit that
-modified that line, and comment on it. The issue with this is that we might
-want to comment on a chunk of code that was the result of several commits in
-which case this method breaks down.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Leverage the &lt;a href=&quot;https://help.github.com/articles/using-pull-requests&quot;&gt;pull request&lt;/a&gt;
-interface, with a little git-&lt;em&gt;fu&lt;/em&gt;, to conduct a proper full code review.
-This is in my opinion the best approach, and in this post, I describe one
-way to do this. There may be more elegant ways, so please let me know if you
-have any suggestions!&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Browse through the files, on GitHub or locally, and open new issues
+  for anything we would like to comment on, copying and pasting the relevant
+  code. Not ideal if we want to comment on 20-30 chunks of code or more!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Browse through the files on GitHub, and if we see a line we want to comment
+  on, we can go to the &lt;em&gt;Blame&lt;/em&gt; tab, and then find the last commit that
+  modified that line, and comment on it. The issue with this is that we might
+  want to comment on a chunk of code that was the result of several commits in
+  which case this method breaks down.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Leverage the &lt;a href="https://help.github.com/articles/using-pull-requests"&gt;pull request&lt;/a&gt;
+  interface, with a little git-&lt;em&gt;fu&lt;/em&gt;, to conduct a proper full code review.
+  This is in my opinion the best approach, and in this post, I describe one
+  way to do this. There may be more elegant ways, so please let me know if you
+  have any suggestions!&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-
-
 &lt;h2&gt;How to do it&lt;/h2&gt;
-
 &lt;p&gt;Ideally, one could simply create an empty branch on GitHub, then set up a pull
 request from &lt;code&gt;master&lt;/code&gt; (or whatever branch you want to review) onto the empty
-branch. However, as far as I can tell, you can&amp;#8217;t create completely empty
+branch. However, as far as I can tell, you can't create completely empty
 branches on GitHub - instead, we need our empty branch to have at least one
 commit, which needs to match the first commit of the branch we want to review
 (otherwise GitHub will complain that there is no common history).&lt;/p&gt;
-
 &lt;p&gt;So how we proceed depends on whether the first commit contains code that needs
 to be reviewed, or if it is unimportant (for example, a lot of repositories
 start with the addition of an empty README file).&lt;/p&gt;
-
-&lt;h3&gt;If the first commit is unimportant&amp;#8230;&lt;/h3&gt;
-
-&lt;p&gt;&amp;#8230; then the situation is fairly easy. You first need to find out the commit
+&lt;h3&gt;If the first commit is unimportant...&lt;/h3&gt;
+&lt;p&gt;... then the situation is fairly easy. You first need to find out the commit
 hash for the first commit in the repository, which you can do with:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;rev&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;list&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;all&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;tail&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="n"&gt;ec2287e5837386c54fbd082021530aa18c0dcf18&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;pre&gt;&lt;code&gt;$ git rev-list &#8211;all | tail -1
-ec2287e5837386c54fbd082021530aa18c0dcf18
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;In the example above the hash is &lt;code&gt;ec2287e5837386c54fbd082021530aa18c0dcf18&lt;/code&gt;,
 but this will be different for you. Now, create an empty branch containing
 only that commit:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;branch&lt;/span&gt; &lt;span class="n"&gt;empty&lt;/span&gt; &lt;span class="n"&gt;ec2287e5837386c54fbd082021530aa18c0dcf18&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;pre&gt;&lt;code&gt;$ git branch empty ec2287e5837386c54fbd082021530aa18c0dcf18
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;This will create, but not switch to, the empty branch. Next push your
 &lt;code&gt;empty&lt;/code&gt; branch to GitHub:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;push&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt; &lt;span class="n"&gt;empty&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;pre&gt;&lt;code&gt;$ git push origin empty
-&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Go to your repository on GitHub and click on the &amp;#8216;Pull Request&amp;#8217; button at the
+&lt;p&gt;Go to your repository on GitHub and click on the 'Pull Request' button at the
 top right of the window:&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&quot;center&quot; src=&quot;http://astrofrog.github.com/images/code_review/pull_request_1.png&quot;&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;img alt="python versions" src="http://astrofrog.github.com/images/code_review/pull_request_1.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Then set it up so that you are pulling the changes from &lt;code&gt;master&lt;/code&gt; into
 &lt;code&gt;empty&lt;/code&gt;, as follows:&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&quot;center&quot; src=&quot;http://astrofrog.github.com/images/code_review/pull_request_2.png&quot;&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;img alt="python versions" src="http://astrofrog.github.com/images/code_review/pull_request_2.png" /&gt;&lt;/p&gt;
 &lt;p&gt;You can now enter a title and message for the pull request, and invite other
 people to comment on the code. If you make changes to &lt;code&gt;master&lt;/code&gt;, you can
 simply push the changes to GitHub as usual:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;push&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt; &lt;span class="n"&gt;master&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;pre&gt;&lt;code&gt;$ git push origin master
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;which should cause the new commits to appear in the pull request. Once the
 review is complete, you can just close the pull request (without merging), and
 keep the empty branch for future reviews (or delete it).&lt;/p&gt;
-
-&lt;h3&gt;If the first commit is important&amp;#8230;&lt;/h3&gt;
-
-&lt;p&gt;&amp;#8230; this makes things a little more complicated. The approach we&amp;#8217;ll take here
+&lt;h3&gt;If the first commit is important...&lt;/h3&gt;
+&lt;p&gt;... this makes things a little more complicated. The approach we'll take here
 is to create two new branches - &lt;code&gt;review&lt;/code&gt;, containing the code to review, and
 &lt;code&gt;empty&lt;/code&gt;, containing no files - both of which contain a common and empty
 first commit (which we will add). In this way, the two branches have a common
 history, even though the &lt;code&gt;empty&lt;/code&gt; branch has no files. We can set then set up
 a pull request from &lt;code&gt;review&lt;/code&gt; to &lt;code&gt;empty&lt;/code&gt;.&lt;/p&gt;
-
 &lt;p&gt;&lt;strong&gt;Important disclaimer&lt;/strong&gt;: make sure that you make a backup of your repository,
 and that there are no unsaved changes! If you follow these instructions, any
 files that are not already in the repository &lt;em&gt;will&lt;/em&gt; get deleted, as well as
 any uncommitted changes! In fact, it might be safest to do this in a clean
-clone of your repository, so that if anything goes wrong, you haven&amp;#8217;t affected
+clone of your repository, so that if anything goes wrong, you haven't affected
 your usual work repository.&lt;/p&gt;
-
 &lt;p&gt;With that disclaimer in mind, go to the repository you want to do a review
 for, and then create an empty branch that we will call &lt;code&gt;review&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;checkout&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;orphan&lt;/span&gt; &lt;span class="n"&gt;review&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;pre&gt;&lt;code&gt;$ git checkout &#8211;orphan review
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;This branch has no history, but the files should still be there and would be
-added to the branch if we were to commit. However, you don&amp;#8217;t want to do this,
+added to the branch if we were to commit. However, you don't want to do this,
 so remove all the files in the repository in the current branch by first
 unstaging all the files:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;rm&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;cached&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;pre&gt;&lt;code&gt;$ git rm -r &#8211;cached *
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;then removing them all:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;clean&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fxd&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;pre&gt;&lt;code&gt;$ git clean -fxd
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Note that any file that was not previously part of the repository will be
 deleted for good, not just from this branch!&lt;/p&gt;
-
 &lt;p&gt;You should now have a nice and empty branch:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;log&lt;/span&gt;
+&lt;span class="nl"&gt;fatal:&lt;/span&gt; &lt;span class="n"&gt;bad&lt;/span&gt; &lt;span class="k"&gt;default&lt;/span&gt; &lt;span class="n"&gt;revision&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;HEAD&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;
 
-&lt;pre&gt;&lt;code&gt;$ git log
-fatal: bad default revision &#8216;HEAD&#8217;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;status&lt;/span&gt;
+&lt;span class="cp"&gt;# On branch review&lt;/span&gt;
+&lt;span class="cp"&gt;#&lt;/span&gt;
+&lt;span class="cp"&gt;# Initial commit&lt;/span&gt;
+&lt;span class="cp"&gt;#&lt;/span&gt;
+&lt;span class="n"&gt;nothing&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;create&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;copy&lt;/span&gt; &lt;span class="n"&gt;files&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt; &lt;span class="n"&gt;use&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;git add&amp;quot;&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;track&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-$ git status
-# On branch review
-#
-# Initial commit
-#
-nothing to commit (create/copy files and use &quot;git add&quot; to track)
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;You are now ready to set up the review. You should first add a dummy commit
 that contains no files:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;allow&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;empty&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Start of the review&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;pre&gt;&lt;code&gt;$ git commit &#8211;allow-empty -m &quot;Start of the review&quot;
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Then create a new branch called &lt;code&gt;empty&lt;/code&gt; that will contain only this commit:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;branch&lt;/span&gt; &lt;span class="n"&gt;empty&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;pre&gt;&lt;code&gt;$ git branch empty
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;This will create a branch with the same empty commit, but will keep on the
 &lt;code&gt;review&lt;/code&gt; branch. You can now merge in the changes from the branch we want to
 actually review, say &lt;code&gt;master&lt;/code&gt;, into &lt;code&gt;review&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;merge&lt;/span&gt; &lt;span class="n"&gt;master&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;pre&gt;&lt;code&gt;$ git merge master
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;You will be asked to provide a merge commit message, and you can just leave
 the default. Next push your &lt;code&gt;review&lt;/code&gt; and &lt;code&gt;empty&lt;/code&gt; branches to GitHub:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;push&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt; &lt;span class="n"&gt;review&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;push&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt; &lt;span class="n"&gt;empty&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;pre&gt;&lt;code&gt;$ git push origin review
-$ git push origin empty
-&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Go to your repository on GitHub and click on the &amp;#8216;Pull Request&amp;#8217; button at the
+&lt;p&gt;Go to your repository on GitHub and click on the 'Pull Request' button at the
 top right of the window:&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&quot;center&quot; src=&quot;http://astrofrog.github.com/images/code_review/pull_request_1.png&quot;&gt;&lt;/p&gt;
-
+&lt;p&gt;{% img center /images/code_review/pull_request_1.png %}&lt;/p&gt;
 &lt;p&gt;Then set it up so that you are pulling the changes from &lt;code&gt;review&lt;/code&gt; into
 &lt;code&gt;empty&lt;/code&gt;, as follows:&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&quot;center&quot; src=&quot;http://astrofrog.github.com/images/code_review/pull_request_3.png&quot;&gt;&lt;/p&gt;
-
+&lt;p&gt;{% img center /images/code_review/pull_request_3.png %}&lt;/p&gt;
 &lt;p&gt;You can now enter a title and message for the pull request, and invite other
 people to comment on the code. Make sure that you switch back to your
 &lt;code&gt;master&lt;/code&gt; (or other) branch to implement the changes, and if you then want to
 update the review pull request, you can switch back to &lt;code&gt;review&lt;/code&gt; and merge
 the latest changes from &lt;code&gt;master&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;checkout&lt;/span&gt; &lt;span class="n"&gt;review&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;merge&lt;/span&gt; &lt;span class="n"&gt;master&lt;/span&gt;
+&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;push&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt; &lt;span class="n"&gt;review&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;pre&gt;&lt;code&gt;$ git checkout review
-$ git merge master
-$ git push origin review
-&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;which should cause the new commits to appear in the pull request.&lt;/p&gt;
-
 &lt;h2&gt;Epilogue&lt;/h2&gt;
-
 &lt;p&gt;As you can see, if the first commit in your repository is unimportant, things
-are actually pretty straightforward. I&amp;#8217;d love to hear if anyone has a better
+are actually pretty straightforward. I'd love to hear if anyone has a better
 way to deal with the case where we want to review all commits, including the
 first. Finally, if any GitHub employees are reading this - please make it
-easier for people to conduct full reviews! :)&lt;/p&gt;
-</description>
-      <link>http://astrofrog.github.com/blog/2013/04/10/how-to-conduct-a-full-code-review-on-github/</link>
-      <pubDate>2013-04-10T13:38:00+02:00</pubDate>
-      <guid>http://astrofrog.github.com/blog/2013/04/10/how-to-conduct-a-full-code-review-on-github</guid>
-    </item>
-    
-    <item>
-      <title>What Python installations are scientists using?</title>
-      <description>&lt;p&gt;Back in November 2012, I
-&lt;a href=&quot;https://twitter.com/astrofrog/status/269743084215103488&quot;&gt;asked&lt;/a&gt; Python
-users in Science to fill out a survey to find out what &lt;a href=&quot;http://www.python.org&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://www.numpy.org&quot;&gt;Numpy&lt;/a&gt;, and
-&lt;a href=&quot;http://www.scipy.org&quot;&gt;Scipy&lt;/a&gt; versions they were using, and how they maintain their installation. My motivation for this was to collect quantitative
+easier for people to conduct full reviews! :)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thomas Robitaille</dc:creator><pubDate>Wed, 10 Apr 2013 13:38:00 +0200</pubDate><guid>tag:astrofrog.github.com,2013-04-10:blog/2013/04/10/how-to-conduct-a-full-code-review-on-github/</guid><category>Git</category><category>GitHub</category><category>Code Review</category></item><item><title>What Python installations are scientists using?</title><link>http://astrofrog.github.com/blog/2013/01/13/what-python-installations-are-scientists-using/</link><description>&lt;p&gt;Back in November 2012, I
+&lt;a href="https://twitter.com/astrofrog/status/269743084215103488"&gt;asked&lt;/a&gt; Python
+users in Science to fill out a survey to find out what &lt;a href="http://www.python.org"&gt;Python&lt;/a&gt;, &lt;a href="http://www.numpy.org"&gt;Numpy&lt;/a&gt;, and
+&lt;a href="http://www.scipy.org"&gt;Scipy&lt;/a&gt; versions they were using, and how they maintain their installation. My motivation for this was to collect quantitative
 information to inform discussions amongst developers regarding which versions
 to support, because those discussions are usually based only on guessing and
 personal experience. In particular, there has been some discussion in the
-&lt;a href=&quot;http://www.astropy.org&quot;&gt;Astropy&lt;/a&gt; project regarding whether we should drop
+&lt;a href="http://www.astropy.org"&gt;Astropy&lt;/a&gt; project regarding whether we should drop
 support for Numpy 1.4, but we had no quantitative information about whether
 this would affect many users (which motivated this study).&lt;/p&gt;
-
-&lt;p&gt;In this post, I&amp;#8217;ll give an overview of the results, as well as access to the
+&lt;p&gt;In this post, I'll give an overview of the results, as well as access to the
 (anonymized) raw data. First, I should mention that given my area of research
 and networks, the only community I obtained significant data are Astronomers,
 so the results I present here only include these (though I also provide the
 raw data for the remaining users for anyone interested).&lt;/p&gt;
-
-&lt;!&#8211; more &#8211;&gt;
 
 
 &lt;p&gt;Before I show the results, I just want to make it clear that I am not claiming
@@ -270,24 +215,18 @@ that the results are a true sampling of Python user levels. I advertised the
 poll via Twitter, a couple of Python mailing lists, and the Facebook group for
 Astronomers. The survey was announced on different days on Twitter and
 Facebook, so there may be some useful information about the typical Python
-installations of Twitter vs Facebook users buried in the data that I won&amp;#8217;t
+installations of Twitter vs Facebook users buried in the data that I won't
 cover here. If anyone is interested about when the announcements were made, to
 correlate with response peaks in the data, please let me know!&lt;/p&gt;
-
-&lt;p&gt;With that out of the way&amp;#8230; let&amp;#8217;s look at the results!&lt;/p&gt;
-
+&lt;p&gt;With that out of the way... let's look at the results!&lt;/p&gt;
 &lt;h2&gt;Overview&lt;/h2&gt;
-
 &lt;p&gt;First, some general stats - there were 313 responses in total, of which 244
 were related to Astronomy (where I use the term in the broadest sense,
 including solar physics, planetary science, astrophysics, and cosmology). The
 responses were recorded between November 17th 2012 and December 2nd 2012 (at
 which point the rate of responses had gone down to less than one a day).&lt;/p&gt;
-
 &lt;h2&gt;Python Versions&lt;/h2&gt;
-
-&lt;p&gt;&lt;img class=&quot;center&quot; src=&quot;http://astrofrog.github.com/images/python_versions.png&quot;&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;img alt="python versions" src="http://astrofrog.github.com/images/python_versions.png" /&gt;&lt;/p&gt;
 &lt;p&gt;As shown above, an overwhelming 80% of Astronomers use Python 2.7, and almost
 15% use Python 2.6. Almost no-one uses Python 3.x for production work yet,
 which is not surprising, given that at the time of the poll there were not
@@ -295,111 +234,99 @@ stable versions for all the crucial packages in a scientific Python stack (in
 particular, Matplotlib only released their first Python 3.x compatible release
 in December). It will be interesting to see how this fraction changes over the
 next year (more on that in future blog posts).&lt;/p&gt;
-
 &lt;h2&gt;Numpy Versions&lt;/h2&gt;
-
-&lt;p&gt;&lt;img class=&quot;center&quot; src=&quot;http://astrofrog.github.com/images/numpy_versions.png&quot;&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;img alt="python versions" src="http://astrofrog.github.com/images/numpy_versions.png" /&gt;&lt;/p&gt;
 &lt;p&gt;In the above plot, &lt;em&gt;dev&lt;/em&gt; includes anything that is a developer version more
 recent than the 1.6.2 release (which was the latest stable release at the time
 of the poll). The distribution is again significantly peaked, with almost 80%
 of respondents using Numpy 1.6.x. There is more of a spread in the remaining
 versions compared with the Python versions, but the vast majority of people
 are using Numpy 1.5.x or more recent.&lt;/p&gt;
-
 &lt;h2&gt;Scipy Versions&lt;/h2&gt;
-
-&lt;p&gt;&lt;img class=&quot;center&quot; src=&quot;http://astrofrog.github.com/images/scipy_versions.png&quot;&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;img alt="python versions" src="http://astrofrog.github.com/images/scipy_versions.png" /&gt;&lt;/p&gt;
 &lt;p&gt;In the above plot, &lt;em&gt;dev&lt;/em&gt; includes anything that is a developer version more
 recent than the stable 0.11 release (which was the latest stable release at
 the time of the poll). Unlike the Python and Numpy versions, which are almost
 exclusively dominated by two versions, the Scipy versions show a larger
 spread, with the most popular version, 0.10.x, representing less than 45% of
 users.&lt;/p&gt;
-
 &lt;p&gt;I originally thought that Scipy released more often than Numpy, and this would
 explain the difference, but it seems that both projects have been releasing at
 a reasonably similar rate (see
-&lt;a href=&quot;http://sourceforge.net/projects/numpy/files/NumPy/&quot;&gt;here&lt;/a&gt; and
-&lt;a href=&quot;http://sourceforge.net/projects/scipy/files/scipy/&quot;&gt;here&lt;/a&gt;). Therefore, this
+&lt;a href="http://sourceforge.net/projects/numpy/files/NumPy/"&gt;here&lt;/a&gt; and
+&lt;a href="http://sourceforge.net/projects/scipy/files/scipy/"&gt;here&lt;/a&gt;). Therefore, this
 might be to do with package managers, or simply to the fact that Numpy is used
 more often than Scipy, and users are therefore more likely to run into bugs
 and update to the latest stable version? I have to admit that I would not even
 be able to tell without checking what Scipy version I am using, whereas I know
-I&amp;#8217;m using Numpy 1.6.2 for production work.&lt;/p&gt;
-
+I'm using Numpy 1.6.2 for production work.&lt;/p&gt;
 &lt;h2&gt;Installation&lt;/h2&gt;
-
 &lt;p&gt;We now get to some very interesting statistics - how users install Python and
 dependencies. While Python is awesome in many respects, installation is
 probably the biggest hurdle that users have to jump to get started.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&quot;center&quot; src=&quot;http://astrofrog.github.com/images/install_methods.png&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;I&amp;#8217;m not sure if anyone&amp;#8217;s quantitatively looked at this before, but this was
+&lt;p&gt;&lt;img alt="python versions" src="http://astrofrog.github.com/images/install_methods.png" /&gt;&lt;/p&gt;
+&lt;p&gt;I'm not sure if anyone's quantitatively looked at this before, but this was
 the first time that I really got a sense for all the different ways that one
 can maintain a Python installation, and which methods are the most popular. The options shown above are described below:&lt;/p&gt;
-
 &lt;p&gt;&lt;em&gt;Linux Manager&lt;/em&gt; means linux package managers (&lt;code&gt;apt-get&lt;/code&gt;, &lt;code&gt;yum&lt;/code&gt;, etc.)
 &lt;em&gt;Source&lt;/em&gt; means an installation from the source code. This means either
 downloading the source code and running &lt;code&gt;python setup.py install&lt;/code&gt;, or using
 &lt;code&gt;pip install&lt;/code&gt; or &lt;code&gt;easy_install&lt;/code&gt;.
 &lt;em&gt;EPD&lt;/em&gt; stands for the
-  &lt;a href=&quot;http://www.enthought.com/products/epd.php&quot;&gt;Enthought Python Distribution&lt;/a&gt;,
+  &lt;a href="http://www.enthought.com/products/epd.php"&gt;Enthought Python Distribution&lt;/a&gt;,
 which is a scientific Python bundle that includes e.g. Numpy, Scipy,
 Matplotlib, and many other packages. It is free for users at academic
 institutions.
-&lt;a href=&quot;http://www.macports.org&quot;&gt;&lt;em&gt;MacPorts&lt;/em&gt;&lt;/a&gt; is one of the most widely used package
+&lt;a href="http://www.macports.org"&gt;&lt;em&gt;MacPorts&lt;/em&gt;&lt;/a&gt; is one of the most widely used package
 managers on Mac, and I have provided instructions for getting set up with
-Python and MacPorts &lt;a href=&quot;http://astrofrog.github.com/macports-python/&quot;&gt;here&lt;/a&gt;.
+Python and MacPorts &lt;a href="http://astrofrog.github.com/macports-python/"&gt;here&lt;/a&gt;.
 &lt;em&gt;Official Installers&lt;/em&gt; refers to the MacOS X disk images, Linux RPMs, and
 Windows installers that are provided by some projects (including Python
 itself, Numpy, and Scipy).
 &lt;em&gt;Admins&lt;/em&gt; means that Python and the packages were installed by System Administrators.
-&lt;a href=&quot;http://www.eso.org/sci/software/scisoft/&quot;&gt;&lt;em&gt;SciSoft&lt;/em&gt;&lt;/a&gt; and &lt;a href=&quot;http://www.stsci.edu/institute/software_hardware/pyraf/stsci_python/current/stsci-python-download&quot;&gt;&lt;em&gt;STScI Python&lt;/em&gt;&lt;/a&gt; are two Astronomy-specific software bundles.
-And &lt;a href=&quot;http://www.activestate.com/activepython&quot;&gt;&lt;em&gt;ActivePython&lt;/em&gt;&lt;/a&gt; is similar to
+&lt;a href="http://www.eso.org/sci/software/scisoft/"&gt;&lt;em&gt;SciSoft&lt;/em&gt;&lt;/a&gt; and &lt;a href="http://www.stsci.edu/institute/software_hardware/pyraf/stsci_python/current/stsci-python-download"&gt;&lt;em&gt;STScI Python&lt;/em&gt;&lt;/a&gt; are two Astronomy-specific software bundles.
+And &lt;a href="http://www.activestate.com/activepython"&gt;&lt;em&gt;ActivePython&lt;/em&gt;&lt;/a&gt; is similar to
 EPD, but where binary packages are downloaded on-the-fly as needed.&lt;/p&gt;
-
 &lt;p&gt;Of course, some of these are not orthogonal, because for example
 &lt;code&gt;easy_install&lt;/code&gt; can be used to install additional packages not in EPD. But
 the responses from the survey refer to how the main packages (Python, Numpy,
 and Scipy) were installed.&lt;/p&gt;
-
 &lt;p&gt;What can we take away from the results?&lt;/p&gt;
-
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;If we combine the Linux Package Managers and MacPorts (one of the Mac
-Package Managers) into a more general &lt;em&gt;Package Managers&lt;/em&gt; category, this
-amounts to around 40% of users, the single largest group.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Only a small fraction of people use the official binary installers, with
-many more people installing from source. This was surprising to me, given
-how quick/easy it is to install Python, Numpy, Scipy, and Matplotlib using
-the official installers. I think this is down to the fact that this is not a
-well-documented installation procedure, and is platform dependent.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Astronomy-specific bundles (SciSoft and STScI Python) are not as widely
-used, which indicates that more effort should be put in getting packages in
-existing package managers than building new software bundles.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;A small fraction (around 7%) have no idea how they installed Python and
-other packages, so they may run into issues when they try and upgrade in
-future. If you install Python for someone, please explain to them what you
-are doing and how they can update packages in future!&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If we combine the Linux Package Managers and MacPorts (one of the Mac
+  Package Managers) into a more general &lt;em&gt;Package Managers&lt;/em&gt; category, this
+  amounts to around 40% of users, the single largest group.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Only a small fraction of people use the official binary installers, with
+  many more people installing from source. This was surprising to me, given
+  how quick/easy it is to install Python, Numpy, Scipy, and Matplotlib using
+  the official installers. I think this is down to the fact that this is not a
+  well-documented installation procedure, and is platform dependent.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Astronomy-specific bundles (SciSoft and STScI Python) are not as widely
+  used, which indicates that more effort should be put in getting packages in
+  existing package managers than building new software bundles.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A small fraction (around 7%) have no idea how they installed Python and
+  other packages, so they may run into issues when they try and upgrade in
+  future. If you install Python for someone, please explain to them what you
+  are doing and how they can update packages in future!&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
-
 &lt;p&gt;I personally feel that we should encourage users to install Python and
 whatever dependencies are available from package managers. Of course, in some
-cases users don&amp;#8217;t have root access, but this generally means that they have
+cases users don't have root access, but this generally means that they have
 sysadmins, so in those cases, the best option is still for the sysadmins to
 install the main Python packages via package managers.&lt;/p&gt;
-
 &lt;h2&gt;Summary&lt;/h2&gt;
-
 &lt;p&gt;To me, one of the most interesting results is that a large number of people
 have a reasonably up-to-date installation, with Python 2.7 and Numpy 1.6.x,
 and I imagine that the Python 2.7 peak is here to stay, given that the
 transition to Python 3 will be slow.&lt;/p&gt;
-
 &lt;p&gt;For developers, supporting only Python 2.6 and above seems like a sensible
 choice at this stage (a decision we made within Astropy), and given the
 imminent release of Numpy 1.7.0, I think that developers can start thinking
@@ -407,27 +334,16 @@ about dropping support for Numpy 1.4 in the near future. For Scipy, things are
 a little more difficult, given the broad spread of versions, so developers
 should ensure that they know what versions they are implicitly supporting, and
 to check what version users have installed.&lt;/p&gt;
-
-&lt;p&gt;In terms of installation method, I think it&amp;#8217;s very important to ensure that
+&lt;p&gt;In terms of installation method, I think it's very important to ensure that
 packages are included in package managers. Even if it is easy to install
 packages via &lt;code&gt;pip&lt;/code&gt; or &lt;code&gt;easy_install&lt;/code&gt; in some cases, putting packages in
 package managers ensures that users will more likely stay up-to-date with the
 most recent versions.&lt;/p&gt;
-
 &lt;p&gt;There is more information still contained in the data than I covered here (for
 example, some of the above points can be correlated - do the people who do not
 know how they installed Python correlate with the older versions?). For anyone
-who is interested in looking at the data, I&amp;#8217;ve placed the files and the
+who is interested in looking at the data, I've placed the files and the
 scripts I used to make the above plots in a GitHub repository
-&lt;a href=&quot;https://github.com/astrofrog/python-versions-survey&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
+&lt;a href="https://github.com/astrofrog/python-versions-survey"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;If you have any thoughts about the results, or find anything interesting in
-the raw data, please leave a comment!&lt;/p&gt;
-</description>
-      <link>http://astrofrog.github.com/blog/2013/01/13/what-python-installations-are-scientists-using/</link>
-      <pubDate>2013-01-13T10:10:00+01:00</pubDate>
-      <guid>http://astrofrog.github.com/blog/2013/01/13/what-python-installations-are-scientists-using</guid>
-    </item>
-    
-  </channel>
-</rss>
+the raw data, please leave a comment!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thomas Robitaille</dc:creator><pubDate>Sun, 13 Jan 2013 10:10:00 +0100</pubDate><guid>tag:astrofrog.github.com,2013-01-13:blog/2013/01/13/what-python-installations-are-scientists-using/</guid><category>Python</category><category>Distribution</category></item></channel></rss>
