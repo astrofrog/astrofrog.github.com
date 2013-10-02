@@ -18,7 +18,7 @@ how often authors actually acknowledge the tools that they use in papers?&lt;/p&
 &lt;p&gt;I previously played around with the &lt;a href="http://adsabs.harvard.edu/"&gt;NASA/ADS&lt;/a&gt;
 full-text search, but what I wanted was a way to be able to do this
 automatically for any keyword/phrase, and be able to see the evolution of
-acknowledgments over time. With the release of the ADS developer API (which
+acknowledgments over time. With the release of the &lt;a href="https://github.com/adsabs/adsabs-dev-api"&gt;ADS developer API&lt;/a&gt; (which
 &lt;a href="http://twitter.com/aaccomazzi"&gt;Alberto Accomazzi&lt;/a&gt; presented on the Monday at
 .Astronomy), I finally had the tool I needed to do this! This was a fun
 post-dotastro hack, for which I now present the results below.&lt;/p&gt;
