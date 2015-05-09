@@ -49,14 +49,14 @@ invalid or problematic.&lt;/p&gt;
 &lt;h2&gt;Demographics&lt;/h2&gt;
 &lt;p&gt;We can start off by taking a quick look at the demographics of surveyed
 users, and in particular the field of work:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="field" src="http://astrofrog.github.com/images/survey_plots/fields.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="field" src="/images/survey_plots/fields.svg" /&gt;&lt;/p&gt;
 &lt;p&gt;Note that one respondent could select multiple fields, so the percentages add up to more than 100%. In addition, I clearly left out several important branches (such as Computer Science and Mathematics) which explains the 19% of 'Other' respondents. I did my best to advertise the survey beyond Astronomy, but there were some very effective advertising channels for Astronomers (for instance, there is a Facebook group with over 8,000 professional Astronomers, a significant fraction of all Astronomers worldwide!) which explains the bias.&lt;/p&gt;
 &lt;p&gt;Another piece of information we have is how long people have been using Python for:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="field" src="http://astrofrog.github.com/images/survey_plots/experience.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="field" src="/images/survey_plots/experience.svg" /&gt;&lt;/p&gt;
 &lt;p&gt;The bins are not all the same width, but this shows that we have a nice mix, ranging from very experienced to very new users. This information will come in handy in the next section :)&lt;/p&gt;
 &lt;h2&gt;Python versions&lt;/h2&gt;
 &lt;p&gt;Now let's get to the main point of this post which is to look at what fraction of users are using different Python versions for their &lt;em&gt;primary&lt;/em&gt; installation:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="python versions" src="http://astrofrog.github.com/images/survey_plots/python.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="python versions" src="/images/survey_plots/python.svg" /&gt;&lt;/p&gt;
 &lt;p&gt;There are a few interesting things to notice here. Firstly, &lt;strong&gt;most users are using either Python 2.7 or 3.4&lt;/strong&gt;, very few users are
 using Python 2.6 and 3.3, and virtually no one uses Python 3.1, and 3.2. This
 has clear implications for which Python versions package developers need to
@@ -73,7 +73,7 @@ installation, which means that around 20.2% of users are now actively using
 Python 3 on a regular basis.  While this is a little low, remember that in the 2012 survey,
 virtually no one used Python 3 as their primary installation, which is not too surprising because at the time, not all of the core Scientific Python packages were fully functional in Python 3. Now that all core packages support Python 3 fully, it's nice to see that we've gone from essentially 0% to 20% in only a couple of years.&lt;/p&gt;
 &lt;p&gt;Let's now take a quick look at operating systems:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="os" src="http://astrofrog.github.com/images/survey_plots/os.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="os" src="/images/survey_plots/os.svg" /&gt;&lt;/p&gt;
 &lt;p&gt;The Linux/Mac split is not surprising, but this shows that almost 10% of
 Scientific Python users are on Windows, which is not negligible. Thankfully,
 services like &lt;a href="http://www.appveyor.com/"&gt;AppVeyor&lt;/a&gt; now make it easy to set up
@@ -82,7 +82,7 @@ easier to support this community.&lt;/p&gt;
 &lt;p&gt;Now for an unexpected (at least for me) result relating to operating systems. The
 following plot is normalized by rows (i.e. the sum of each row is 100%) to show, for each operating system, the
 distribution of Python versions:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="python vs os" src="http://astrofrog.github.com/images/survey_plots/os_vs_python.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="python vs os" src="/images/survey_plots/os_vs_python.svg" /&gt;&lt;/p&gt;
 &lt;p&gt;Yes, that's right, Windows users are the most up-to-date when it comes to Python
 versions – almost 40% of Windows users are using Python 3! Mac users on the
 other hand are the most conservative, with almost 90% sticking to Python 2.7.
@@ -95,7 +95,7 @@ install Python themselves).&lt;/p&gt;
 &lt;p&gt;So &lt;strong&gt;why&lt;/strong&gt; do some users not use Python 3? Here's the breakdown of the main
 reasons, for the 80% or so of users whose primary Python version is 2.6 or
 2.7 (note that one user can select several of these answers):&lt;/p&gt;
-&lt;p&gt;&lt;img alt="python3" src="http://astrofrog.github.com/images/survey_plots/why_not_python3.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="python3" src="/images/survey_plots/why_not_python3.svg" /&gt;&lt;/p&gt;
 &lt;p&gt;Almost two thirds of users who are still using Python 2 do not have any
 motivation to update to Python 3. This is essentially what Jake Vanderplas
 &lt;a href="https://jakevdp.github.io/blog/2013/01/03/will-scientists-ever-move-to-
@@ -109,7 +109,7 @@ users directly – of course, idealistically, unicode support by default is grea
 Python 3 by default. We can still tell new users about Python 2 in case they
 encounter it, but only as an aside. So let's see whether new users are preferentially using Python 3? (note: the following plot is normalized by
 columns):&lt;/p&gt;
-&lt;p&gt;&lt;img alt="python vs experience" src="http://astrofrog.github.com/images/survey_plots/python_vs_experience.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="python vs experience" src="/images/survey_plots/python_vs_experience.svg" /&gt;&lt;/p&gt;
 &lt;p&gt;Hmm, no.... Actually, 6% of the newest users (&amp;lt;1 year) are using Python 2.6
 (the most compared to other users!) and only 13% are using Python 3, &lt;strong&gt;less&lt;/strong&gt;
 than any other users. I suspect this is because new users just use whatever
