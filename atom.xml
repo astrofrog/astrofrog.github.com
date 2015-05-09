@@ -111,7 +111,15 @@ python-3/"&gt;wrote about&lt;/a&gt; two years ago – to quote him in that blog 
 than sufficient for my own research&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Now I can certainly understand this argument, and I always
 find it difficult to give concrete features in Python 3 that will benefit
-users directly – of course, idealistically, unicode support by default is great because there's no reason that strings should be limited to the ASCII alphabet, but for users that don't need this, it's a harder sell. Personally, I switched to using Python 3 for a very pragmatic reason, which is the following: Python 3 is the future and we are going to have to switch to it sooner or later – &lt;strong&gt;the more we put it off, the harder the transition will be!&lt;/strong&gt; To me, that is a good enough motivation to switch as soon as possible now that the Scientific Python ecosystem supports this.&lt;/p&gt;
+users directly – of course, idealistically, unicode support by default is
+great because there's no reason that strings should be limited to the ASCII
+alphabet, but for users that don't need this, it's a harder sell. There are
+other features that exist in Python 3 and not Python 2, but personally, I
+switched to using Python 3 for a very pragmatic reason, which is the
+following: Python 3 is the future and we are going to have to switch to it
+sooner or later – &lt;strong&gt;the more we put it off, the harder the transition will
+be!&lt;/strong&gt; To me, that is a good enough motivation to switch as soon as possible
+now that the Scientific Python ecosystem supports this.&lt;/p&gt;
 &lt;p&gt;Whether or not you agree with me that this is a good enough reason, at the very least, there really is no reason we shouldn't be &lt;em&gt;teaching&lt;/em&gt;
 Python 3 by default. We can still tell new users about Python 2 in case they
 encounter it, but only as an aside. So let's see whether new users are preferentially using Python 3? (note: the following plot is normalized by
@@ -151,14 +159,26 @@ Python 2, making Python 3 a harder sell. A couple of random examples of backport
   installation, compared to essentially 0% a couple of years ago.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;The main reason for Python 2 users to not switch to Python 3 is the lack of
-  motivation/killer features. We need to therefore be more proactive in
-  encouraging people to switch to Python 3 by (a) making sure that any new users are always directed to the latest Python 3 version, and (b) releasing, in the near future, new major versions of packages for Python 3 only, while maintaining long term bugfix support for Python 2 versions.&lt;/p&gt;
+&lt;p&gt;The main reason for Python 2 users to not switch to Python 3 is the
+  lack of motivation/killer features. We need to therefore be more
+  proactive in encouraging people to switch to Python 3 by (a) better
+  advertising new features in Python 3 not available in Python 2, (b) making
+  sure that any new users are always directed to the latest Python 3 version,
+  and (c) releasing, in the near future, new major versions of packages for
+  Python 3 only, while maintaining long term bugfix support for Python 2
+  versions.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Let me know if you have any thoughts on these results so far in the comment section below, and stay tuned for future blog posts with more results!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Update 1 (9 May 2015 at 19:15 UT):&lt;/strong&gt; I have now include more fields of
-research based on answers supplied in the 'Other' field. I have also reworded my recommendation for dropping support for Python versions to make it clear that I don't think we should drop support for 3.3.&lt;/p&gt;</summary><category term="Python"></category></entry><entry><title>The Acknowledgment Generator</title><link href="http://astrofrog.github.com/blog/2014/12/07/acknowledgment-generator/" rel="alternate"></link><updated>2014-12-07T00:00:00+01:00</updated><author><name>Thomas Robitaille</name></author><id>tag:astrofrog.github.com,2014-12-07:blog/2014/12/07/acknowledgment-generator/</id><summary type="html">&lt;p&gt;This week, the 6th installment of the &lt;a href="http://dotastronomy.com/"&gt;.Astronomy&lt;/a&gt;
+research based on answers supplied in the 'Other' field. I have also reworded my recommendation for dropping support for Python versions to make it clear that I don't think we should drop support for 3.3.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update 2 (9 May 2015 at 11:30 UT):&lt;/strong&gt; Updated the last bullet in the
+take-away points to clarify that we should also make sure we better advertise
+Python 3-only features. For instance Python 3.5 will have a matrix
+multiplication operator which will be very useful especially for Scientific
+Python users. Also, updated the paragraph starting &lt;em&gt;Now I can certainly
+understand this argument&lt;/em&gt; to mention that of course there are other new
+features besides default unicode in Python 3.&lt;/p&gt;</summary><category term="Python"></category></entry><entry><title>The Acknowledgment Generator</title><link href="http://astrofrog.github.com/blog/2014/12/07/acknowledgment-generator/" rel="alternate"></link><updated>2014-12-07T00:00:00+01:00</updated><author><name>Thomas Robitaille</name></author><id>tag:astrofrog.github.com,2014-12-07:blog/2014/12/07/acknowledgment-generator/</id><summary type="html">&lt;p&gt;This week, the 6th installment of the &lt;a href="http://dotastronomy.com/"&gt;.Astronomy&lt;/a&gt;
 conference series will be taking place in Chicago. I will unfortunately not be
 attending this year, but I was nevertheless motivated today to try and finish
 up a hack that started as a result of discussions with
