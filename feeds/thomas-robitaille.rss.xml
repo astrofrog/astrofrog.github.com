@@ -50,7 +50,17 @@ invalid or problematic.&lt;/p&gt;
 &lt;p&gt;We can start off by taking a quick look at the demographics of surveyed
 users, and in particular the field of work:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="field" src="/images/survey_plots/fields.svg" /&gt;&lt;/p&gt;
-&lt;p&gt;Note that one respondent could select multiple fields, so the percentages add up to more than 100%. In addition, I clearly left out several important branches (such as Computer Science and Mathematics) which explains the 19% of 'Other' respondents. I did my best to advertise the survey beyond Astronomy, but there were some very effective advertising channels for Astronomers (for instance, there is a Facebook group with over 8,000 professional Astronomers, a significant fraction of all Astronomers worldwide!) which explains the bias.&lt;/p&gt;
+&lt;p&gt;Note that one respondent could select multiple fields, so the percentages add
+up to more than 100%. In addition, I left out several important branches
+(such as Biology/Bioinformatics, Computer Science, Mathematics) from the
+original survey, but parsed these from the answers provided in the 'Other'
+field. I did my best to advertise the survey beyond Astronomy, but there were
+some very effective advertising channels for Astronomers (for instance, there
+is a Facebook group with over 8,000 professional Astronomers, a significant
+fraction of all Astronomers worldwide!) which explains the huge bias towards
+Astronomy/Astrophysics. If your field is under-represented here, please leave
+a comment below to let me know where I can advertise a similar survey next
+time for maximum impact!&lt;/p&gt;
 &lt;p&gt;Another piece of information we have is how long people have been using Python for:&lt;/p&gt;
 &lt;p&gt;&lt;img alt="field" src="/images/survey_plots/experience.svg" /&gt;&lt;/p&gt;
 &lt;p&gt;The bins are not all the same width, but this shows that we have a nice mix, ranging from very experienced to very new users. This information will come in handy in the next section :)&lt;/p&gt;
@@ -60,11 +70,8 @@ users, and in particular the field of work:&lt;/p&gt;
 &lt;p&gt;There are a few interesting things to notice here. Firstly, &lt;strong&gt;most users are using either Python 2.7 or 3.4&lt;/strong&gt;, very few users are
 using Python 2.6 and 3.3, and virtually no one uses Python 3.1, and 3.2. This
 has clear implications for which Python versions package developers need to
-support. Based on this, I would argue that only Python 2.7 and 3.4 really
-need to be supported - Python 2.6 as well as 3.1 and 3.2 can essentially be
-dropped (I think that Python 3.3 should still be supported because as a
-fraction of Python 3 users, it's not negligible, and it is a recent
-enough release, but I think that once Python 3.5 is out, we can already consider no longer supporting 3.3)&lt;/p&gt;
+support. Based on this, I would argue that the main versions that need to be supported are Python 2.7 and 3.4, as well as 3.3 (since it is not a negligible fraction of Python 3 users). &lt;strong&gt;Support for Python 2.6 as well as
+3.1 and 3.2 can essentially be dropped.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Secondly, over 17% of respondents use Python 3 as their &lt;strong&gt;primary&lt;/strong&gt; Python
 installation. In fact, if we
 look at the exact statistics from the data, we find that 17.4% of users use
@@ -149,7 +156,9 @@ Python 2, making Python 3 a harder sell. A couple of random examples of backport
   encouraging people to switch to Python 3 by (a) making sure that any new users are always directed to the latest Python 3 version, and (b) releasing, in the near future, new major versions of packages for Python 3 only, while maintaining long term bugfix support for Python 2 versions.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Let me know if you have any thoughts on these results so far in the comment section below, and stay tuned for future blog posts with more results!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thomas Robitaille</dc:creator><pubDate>Sat, 09 May 2015 00:00:00 +0200</pubDate><guid>tag:astrofrog.github.com,2015-05-09:blog/2015/05/09/2015-survey-results/</guid><category>Python</category></item><item><title>The Acknowledgment Generator</title><link>http://astrofrog.github.com/blog/2014/12/07/acknowledgment-generator/</link><description>&lt;p&gt;This week, the 6th installment of the &lt;a href="http://dotastronomy.com/"&gt;.Astronomy&lt;/a&gt;
+&lt;p&gt;Let me know if you have any thoughts on these results so far in the comment section below, and stay tuned for future blog posts with more results!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update 1 (9 May 2015 at 19:15 UT):&lt;/strong&gt; I have now include more fields of
+research based on answers supplied in the 'Other' field. I have also reworded my recommendation for dropping support for Python versions to make it clear that I don't think we should drop support for 3.3.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Thomas Robitaille</dc:creator><pubDate>Sat, 09 May 2015 00:00:00 +0200</pubDate><guid>tag:astrofrog.github.com,2015-05-09:blog/2015/05/09/2015-survey-results/</guid><category>Python</category></item><item><title>The Acknowledgment Generator</title><link>http://astrofrog.github.com/blog/2014/12/07/acknowledgment-generator/</link><description>&lt;p&gt;This week, the 6th installment of the &lt;a href="http://dotastronomy.com/"&gt;.Astronomy&lt;/a&gt;
 conference series will be taking place in Chicago. I will unfortunately not be
 attending this year, but I was nevertheless motivated today to try and finish
 up a hack that started as a result of discussions with
