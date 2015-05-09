@@ -1,5 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>.py in the sky</title><link href="http://astrofrog.github.com/" rel="alternate"></link><link href="http://astrofrog.github.com/feeds/thomas-robitaille.atom.xml" rel="self"></link><id>http://astrofrog.github.com/</id><updated>2014-12-07T00:00:00+01:00</updated><entry><title>The Acknowledgment Generator</title><link href="http://astrofrog.github.com/blog/2014/12/07/acknowledgment-generator/" rel="alternate"></link><updated>2014-12-07T00:00:00+01:00</updated><author><name>Thomas Robitaille</name></author><id>tag:astrofrog.github.com,2014-12-07:blog/2014/12/07/acknowledgment-generator/</id><summary type="html">&lt;p&gt;This week, the 6th installment of the &lt;a href="http://dotastronomy.com/"&gt;.Astronomy&lt;/a&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>.py in the sky</title><link href="http://astrofrog.github.com/" rel="alternate"></link><link href="http://astrofrog.github.com/feeds/thomas-robitaille.atom.xml" rel="self"></link><id>http://astrofrog.github.com/</id><updated>2015-05-09T00:00:00+02:00</updated><entry><title>Python 3 in Science: the great migration has begun!</title><link href="http://astrofrog.github.com/blog/2015/05/09/2015-survey-results/" rel="alternate"></link><updated>2015-05-09T00:00:00+02:00</updated><author><name>Thomas Robitaille</name></author><id>tag:astrofrog.github.com,2015-05-09:blog/2015/05/09/2015-survey-results/</id><summary type="html">&lt;p&gt;Back in 2012, &lt;a href="http://astrofrog.github.io/blog/2013/01/13/what-python-installations-are-scientists-using/"&gt;I carried out a survey&lt;/a&gt; to find out which Python, NumPy, and
+SciPy versions scientists are currently using for their daily work, in order
+to better understand which versions should be supported. The main finding was that a large fraction of people have
+reasonably up-to-date Python installations, although virtually no-one was
+using Python 3 for daily work.&lt;/p&gt;
+&lt;p&gt;Two years later, I decided to repeat the experiment, in order to measure
+changes over time, as well as collect a wider variety of information about Python installations and Scientific Python users. In
+January this year I advertised a survey which asked users to provide
+information about their Python installation(s) for research/production work,
+as well as more general information about their Python experience, which
+packages they used regularly, why they are not using Python 3 if they were
+still using Python 2, and so on.&lt;/p&gt;
+&lt;p&gt;There is a &lt;em&gt;lot&lt;/em&gt; to be learned from this data, and there is no way that I can
+cover all results in a single blog post, so instead I will focus only on a
+few points in this post, and will write several more posts over the next
+couple of weeks to highlight various other results.&lt;/p&gt;
+&lt;p&gt;For this post, I thought it would be fun to take a look specifically at what
+Python versions users in the scientific Python community are using, and in
+particular, the state of Python 3 adoption.  I am making an anonymized
+and cleaned-up version of the subset of the data used in this post in &lt;a href="https://github.com/astrofrog/scientific-python-survey-2015"&gt;this&lt;/a&gt; GitHub repository, and will add to the data over time with future blog posts.&lt;/p&gt;
+
+
+&lt;h2&gt;The survey&lt;/h2&gt;
+&lt;p&gt;Before I go ahead, just a few details about the survey. To start with, I
+asked respondents to provide information about their primary Python
+installation for research/production work, gave the option to provide
+information about a second and third installation they use regularly, also
+for research/production work (not for development). The information collected
+about the different Python installations was:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Their operating system&lt;/li&gt;
+&lt;li&gt;The full version numbers for Python, NumPy, SciPy, and Matplotlib&lt;/li&gt;
+&lt;li&gt;Their regularly used installation method/manager (e.g. pip, conda, etc.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In addition, I asked general questions (not specific to a given Python
+installation), for example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What scientific Python packages do they use?&lt;/li&gt;
+&lt;li&gt;How long have they been using Python for?&lt;/li&gt;
+&lt;li&gt;If they are not using Python 3, why not?&lt;/li&gt;
+&lt;li&gt;How did they find out about the survey?&lt;/li&gt;
+&lt;li&gt;Did they take the 2012 survey?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In total, there were 786 responses to the survey, far more than I had
+anticipated, and more than twice the number of respondents in 2012 (313)! The
+results below include 781 responses, because 5 of the responses were partially
+invalid or problematic.&lt;/p&gt;
+&lt;p&gt;Let's now dive in and take a look at some of the results!&lt;/p&gt;
+&lt;h2&gt;Demographics&lt;/h2&gt;
+&lt;p&gt;We can start off by taking a quick look at the demographics of surveyed
+users, and in particular the field of work:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="field" src="http://astrofrog.github.com/images/survey_plots/fields.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;Note that one respondent could select multiple fields, so the percentages add up to more than 100%. In addition, I clearly left out several important branches (such as Computer Science and Mathematics) which explains the 19% of 'Other' respondents. I did my best to advertise the survey beyond Astronomy, but there were some very effective advertising channels for Astronomers (for instance, there is a Facebook group with over 8,000 professional Astronomers, a significant fraction of all Astronomers worldwide!) which explains the bias.&lt;/p&gt;
+&lt;p&gt;Another piece of information we have is how long people have been using Python for:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="field" src="http://astrofrog.github.com/images/survey_plots/experience.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;The bins are not all the same width, but this shows that we have a nice mix, ranging from very experienced to very new users. This information will come in handy in the next section :)&lt;/p&gt;
+&lt;h2&gt;Python versions&lt;/h2&gt;
+&lt;p&gt;Now let's get to the main point of this post which is to look at what fraction of users are using different Python versions for their &lt;em&gt;primary&lt;/em&gt; installation:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="python versions" src="http://astrofrog.github.com/images/survey_plots/python.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;There are a few interesting things to notice here. Firstly, &lt;strong&gt;most users are using either Python 2.7 or 3.4&lt;/strong&gt;, very few users are
+using Python 2.6 and 3.3, and virtually no one uses Python 3.1, and 3.2. This
+has clear implications for which Python versions package developers need to
+support. Based on this, I would argue that only Python 2.7 and 3.4 really
+need to be supported - Python 2.6 as well as 3.1 and 3.2 can essentially be
+dropped (I think that Python 3.3 should still be supported because as a
+fraction of Python 3 users, it's not negligible, and it is a recent
+enough release, but I think that once Python 3.5 is out, we can already consider no longer supporting 3.3)&lt;/p&gt;
+&lt;p&gt;Secondly, over 17% of respondents use Python 3 as their &lt;strong&gt;primary&lt;/strong&gt; Python
+installation. In fact, if we
+look at the exact statistics from the data, we find that 17.4% of users use
+Python 3 as their primary installation, and 2.8% use it as a secondary
+installation, which means that around 20.2% of users are now actively using
+Python 3 on a regular basis.  While this is a little low, remember that in the 2012 survey,
+virtually no one used Python 3 as their primary installation, which is not too surprising because at the time, not all of the core Scientific Python packages were fully functional in Python 3. Now that all core packages support Python 3 fully, it's nice to see that we've gone from essentially 0% to 20% in only a couple of years.&lt;/p&gt;
+&lt;p&gt;Let's now take a quick look at operating systems:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="os" src="http://astrofrog.github.com/images/survey_plots/os.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;The Linux/Mac split is not surprising, but this shows that almost 10% of
+Scientific Python users are on Windows, which is not negligible. Thankfully,
+services like &lt;a href="http://www.appveyor.com/"&gt;AppVeyor&lt;/a&gt; now make it easy to set up
+continuous integration/testing for packages on Windows, so it's becoming
+easier to support this community.&lt;/p&gt;
+&lt;p&gt;Now for an unexpected (at least for me) result relating to operating systems. The
+following plot is normalized by rows (i.e. the sum of each row is 100%) to show, for each operating system, the
+distribution of Python versions:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="python vs os" src="http://astrofrog.github.com/images/survey_plots/os_vs_python.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;Yes, that's right, Windows users are the most up-to-date when it comes to Python
+versions – almost 40% of Windows users are using Python 3! Mac users on the
+other hand are the most conservative, with almost 90% sticking to Python 2.7.
+At this point, I'm not sure what the difference is due to, but I'd be
+interested in hearing your thoughts in the comments! There may be information in the
+full dataset that can help us answer that – in particular, I have a suspicion
+it could be related to installation methods for Python and default Python
+versions available on Linux and MacOS X (whereas Windows users always have to
+install Python themselves).&lt;/p&gt;
+&lt;p&gt;So &lt;strong&gt;why&lt;/strong&gt; do some users not use Python 3? Here's the breakdown of the main
+reasons, for the 80% or so of users whose primary Python version is 2.6 or
+2.7 (note that one user can select several of these answers):&lt;/p&gt;
+&lt;p&gt;&lt;img alt="python3" src="http://astrofrog.github.com/images/survey_plots/why_not_python3.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;Almost two thirds of users who are still using Python 2 do not have any
+motivation to update to Python 3. This is essentially what Jake Vanderplas
+&lt;a href="https://jakevdp.github.io/blog/2013/01/03/will-scientists-ever-move-to-
+python-3/"&gt;wrote about&lt;/a&gt; two years ago – to quote him in that blog post, &lt;em&gt;I'd do it myself
+[switch to Python 3], but I'm too much of a pragmatist: python 2.7 is more
+than sufficient for my own research&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Now I can certainly understand this argument, and I always
+find it difficult to give concrete features in Python 3 that will benefit
+users directly – of course, idealistically, unicode support by default is great because there's no reason that strings should be limited to the ASCII alphabet, but for users that don't need this, it's a harder sell. Personally, I switched to using Python 3 for a very pragmatic reason, which is the following: Python 3 is the future and we are going to have to switch to it sooner or later – &lt;strong&gt;the more we put it off, the harder the transition will be!&lt;/strong&gt; To me, that is a good enough motivation to switch as soon as possible now that the Scientific Python ecosystem supports this.&lt;/p&gt;
+&lt;p&gt;Whether or not you agree with me that this is a good enough reason, at the very least, there really is no reason we shouldn't be &lt;em&gt;teaching&lt;/em&gt;
+Python 3 by default. We can still tell new users about Python 2 in case they
+encounter it, but only as an aside. So let's see whether new users are preferentially using Python 3? (note: the following plot is normalized by
+columns):&lt;/p&gt;
+&lt;p&gt;&lt;img alt="python vs experience" src="http://astrofrog.github.com/images/survey_plots/python_vs_experience.svg" /&gt;&lt;/p&gt;
+&lt;p&gt;Hmm, no.... Actually, 6% of the newest users (&amp;lt;1 year) are using Python 2.6
+(the most compared to other users!) and only 13% are using Python 3, &lt;strong&gt;less&lt;/strong&gt;
+than any other users. I suspect this is because new users just use whatever
+Python versions are available and aren't yet aware of which versions are the
+latest. Furthermore, I suspect most Python courses/workshops still use Python 2. But this is all wrong – we should be teaching new users to use Python 3! New users won't thank you if you teach them Python 2 and they have to migrate all their scripts to Python 3 in a few years... I would strongly encourage any
+of you involved in teaching Python to switch now to using Python 3, &lt;em&gt;even if
+you don't use it yourself&lt;/em&gt; (for my part, I teach a &lt;a href="http://mpia.de/~robitaille/PY4SCI_SS_2015"&gt;Python course&lt;/a&gt; which uses Python 3.4 at the University of Heidelberg, and everything has gone very
+smoothly!)&lt;/p&gt;
+&lt;p&gt;One final suggestion I have is that we start holding Python 3 'migration clinics', where we can help users convert their code to be Python 3-compatible, and help them get set up with Python 3, either as a secondary installation, or a primary one. We can also teach users how to write code that is Python 2 and 3-compatible, using e.g. the &lt;code&gt;__future__&lt;/code&gt; imports, as well as libraries like &lt;a href="https://pypi.python.org/pypi/six"&gt;six&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;What can developers do?&lt;/h2&gt;
+&lt;p&gt;I think that as developers, we can do more to encourage Python 3 adoption. In my view, one of
+the mistakes of the Python 3 transition was that Python
+developers backported many new and very nice features of Python 3 back to
+Python 2, making Python 3 a harder sell. A couple of random examples of backported features include
+&lt;a href="https://docs.python.org/3/library/collections.html#collections.OrderedDict"&gt;ordered dictionaries&lt;/a&gt; and &lt;a href="https://docs.python.org/3.4/tutorial/datastructures.html#dictionaries"&gt;dictionary comprehensions&lt;/a&gt;. However, the Python developers have now stated that &lt;a href="https://www.python.org/dev/peps/pep-0404/"&gt;there will be no Python 2.8 release&lt;/a&gt;. Essentially, no new features are going to be added to Python 2. In fact, after 2020 (which is not &lt;em&gt;so&lt;/em&gt; far in the future), Python 2 will no longer be supported.&lt;/p&gt;
+&lt;p&gt;At some point in the near future, I feel that other package developers should follow this example by having only bugfix releases on Python 2, and releasing new major versions of packages that only support Python 3. To be clear, Python 2 users will still be able to use packages for as long as they like, and no features would be taken away, but in order to get the latest and greatest, they would need to upgrade to Python 3.&lt;/p&gt;
+&lt;h2&gt;Take-away points&lt;/h2&gt;
+&lt;p&gt;We've only scratched the surface of the data from this survey, and already, we can see several interesting things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;It's pretty safe to say that developers can now drop support for Python
+  2.6, 3.1, and 3.2. Python 3.4 is far more popular than Python 2.6, and so it's much more important to make sure we support the former than the latter.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We should not under-estimate the fraction of Windows users in the
+  Scientific Python community (almost 10%). Supporting these users is now
+  made easier by online continuous integration services running Windows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Python 3 is catching on, with over 17% of people using it as their primary
+  installation, and over 20% if we include people who use it as a secondary
+  installation, compared to essentially 0% a couple of years ago.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The main reason for Python 2 users to not switch to Python 3 is the lack of
+  motivation/killer features. We need to therefore be more proactive in
+  encouraging people to switch to Python 3, by (a) making sure that any new users are always directed to the latest Python 3 version, and (b) in the near future, we start releasing new major versions of packages for Python 3 only, while maintaining long term bugfix support for Python 2 versions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let me know if you have any thoughts on these results so far in the comment section below!&lt;/p&gt;</summary><category term="Python"></category></entry><entry><title>The Acknowledgment Generator</title><link href="http://astrofrog.github.com/blog/2014/12/07/acknowledgment-generator/" rel="alternate"></link><updated>2014-12-07T00:00:00+01:00</updated><author><name>Thomas Robitaille</name></author><id>tag:astrofrog.github.com,2014-12-07:blog/2014/12/07/acknowledgment-generator/</id><summary type="html">&lt;p&gt;This week, the 6th installment of the &lt;a href="http://dotastronomy.com/"&gt;.Astronomy&lt;/a&gt;
 conference series will be taking place in Chicago. I will unfortunately not be
 attending this year, but I was nevertheless motivated today to try and finish
 up a hack that started as a result of discussions with
@@ -194,21 +345,21 @@ start with the addition of an empty README file).&lt;/p&gt;
 &lt;h3&gt;If the first commit is unimportant...&lt;/h3&gt;
 &lt;p&gt;... then the situation is fairly easy. You first need to find out the commit
 hash for the first commit in the repository, which you can do with:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;rev&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;list&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;all&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;tail&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
-&lt;span class="n"&gt;ec2287e5837386c54fbd082021530aa18c0dcf18&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git rev-list --all &lt;span class="p"&gt;|&lt;/span&gt; tail -1
+ec2287e5837386c54fbd082021530aa18c0dcf18
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;In the example above the hash is &lt;code&gt;ec2287e5837386c54fbd082021530aa18c0dcf18&lt;/code&gt;,
 but this will be different for you. Now, create an empty branch containing
 only that commit:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;branch&lt;/span&gt; &lt;span class="n"&gt;empty&lt;/span&gt; &lt;span class="n"&gt;ec2287e5837386c54fbd082021530aa18c0dcf18&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git branch empty ec2287e5837386c54fbd082021530aa18c0dcf18
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;This will create, but not switch to, the empty branch. Next push your
 &lt;code&gt;empty&lt;/code&gt; branch to GitHub:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;push&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt; &lt;span class="n"&gt;empty&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git push origin empty
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -221,7 +372,7 @@ top right of the window:&lt;/p&gt;
 &lt;p&gt;You can now enter a title and message for the pull request, and invite other
 people to comment on the code. If you make changes to &lt;code&gt;master&lt;/code&gt;, you can
 simply push the changes to GitHub as usual:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;push&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt; &lt;span class="n"&gt;master&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git push origin master
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -243,7 +394,7 @@ clone of your repository, so that if anything goes wrong, you haven't affected
 your usual work repository.&lt;/p&gt;
 &lt;p&gt;With that disclaimer in mind, go to the repository you want to do a review
 for, and then create an empty branch that we will call &lt;code&gt;review&lt;/code&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;checkout&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;orphan&lt;/span&gt; &lt;span class="n"&gt;review&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git checkout --orphan review
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -251,52 +402,52 @@ for, and then create an empty branch that we will call &lt;code&gt;review&lt;/co
 added to the branch if we were to commit. However, you don't want to do this,
 so remove all the files in the repository in the current branch by first
 unstaging all the files:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;rm&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;cached&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git rm -r --cached *
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;then removing them all:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;clean&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;fxd&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git clean -fxd
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Note that any file that was not previously part of the repository will be
 deleted for good, not just from this branch!&lt;/p&gt;
 &lt;p&gt;You should now have a nice and empty branch:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;log&lt;/span&gt;
-&lt;span class="nl"&gt;fatal:&lt;/span&gt; &lt;span class="n"&gt;bad&lt;/span&gt; &lt;span class="k"&gt;default&lt;/span&gt; &lt;span class="n"&gt;revision&lt;/span&gt; &lt;span class="err"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;HEAD&lt;/span&gt;&lt;span class="err"&gt;&amp;#39;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git log
+fatal: bad default revision &lt;span class="s1"&gt;&amp;#39;HEAD&amp;#39;&lt;/span&gt;
 
-&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;status&lt;/span&gt;
-&lt;span class="cp"&gt;# On branch review&lt;/span&gt;
-&lt;span class="cp"&gt;#&lt;/span&gt;
-&lt;span class="cp"&gt;# Initial commit&lt;/span&gt;
-&lt;span class="cp"&gt;#&lt;/span&gt;
-&lt;span class="n"&gt;nothing&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;create&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;copy&lt;/span&gt; &lt;span class="n"&gt;files&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt; &lt;span class="n"&gt;use&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;git add&amp;quot;&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;track&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;git status
+&lt;span class="c"&gt;# On branch review&lt;/span&gt;
+&lt;span class="c"&gt;#&lt;/span&gt;
+&lt;span class="c"&gt;# Initial commit&lt;/span&gt;
+&lt;span class="c"&gt;#&lt;/span&gt;
+nothing to commit &lt;span class="o"&gt;(&lt;/span&gt;create/copy files and use &lt;span class="s2"&gt;&amp;quot;git add&amp;quot;&lt;/span&gt; to track&lt;span class="o"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;You are now ready to set up the review. You should first add a dummy commit
 that contains no files:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;allow&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;empty&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Start of the review&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git commit --allow-empty -m &lt;span class="s2"&gt;&amp;quot;Start of the review&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Then create a new branch called &lt;code&gt;empty&lt;/code&gt; that will contain only this commit:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;branch&lt;/span&gt; &lt;span class="n"&gt;empty&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git branch empty
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;This will create a branch with the same empty commit, but will keep on the
 &lt;code&gt;review&lt;/code&gt; branch. You can now merge in the changes from the branch we want to
 actually review, say &lt;code&gt;master&lt;/code&gt;, into &lt;code&gt;review&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;merge&lt;/span&gt; &lt;span class="n"&gt;master&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git merge master
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;You will be asked to provide a merge commit message, and you can just leave
 the default. Next push your &lt;code&gt;review&lt;/code&gt; and &lt;code&gt;empty&lt;/code&gt; branches to GitHub:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;push&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt; &lt;span class="n"&gt;review&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;push&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt; &lt;span class="n"&gt;empty&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git push origin review
+&lt;span class="nv"&gt;$ &lt;/span&gt;git push origin empty
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -311,9 +462,9 @@ people to comment on the code. Make sure that you switch back to your
 &lt;code&gt;master&lt;/code&gt; (or other) branch to implement the changes, and if you then want to
 update the review pull request, you can switch back to &lt;code&gt;review&lt;/code&gt; and merge
 the latest changes from &lt;code&gt;master&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;checkout&lt;/span&gt; &lt;span class="n"&gt;review&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;merge&lt;/span&gt; &lt;span class="n"&gt;master&lt;/span&gt;
-&lt;span class="err"&gt;$&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;push&lt;/span&gt; &lt;span class="n"&gt;origin&lt;/span&gt; &lt;span class="n"&gt;review&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git checkout review
+&lt;span class="nv"&gt;$ &lt;/span&gt;git merge master
+&lt;span class="nv"&gt;$ &lt;/span&gt;git push origin review
 &lt;/pre&gt;&lt;/div&gt;
 
 
