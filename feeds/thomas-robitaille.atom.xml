@@ -169,16 +169,24 @@ Python 2, making Python 3 a harder sell. A couple of random examples of backport
   versions.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Let me know if you have any thoughts on these results so far in the comment section below, and stay tuned for future blog posts with more results!&lt;/p&gt;
+&lt;p&gt;Let me know if you have any thoughts on these results so far in the comment
+section below, and stay tuned for future blog posts with more results!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Update 1 (9 May 2015 at 19:15 UT):&lt;/strong&gt; I have now include more fields of
-research based on answers supplied in the 'Other' field. I have also reworded my recommendation for dropping support for Python versions to make it clear that I don't think we should drop support for 3.3.&lt;/p&gt;
+research based on answers supplied in the 'Other' field. I have also reworded
+my recommendation for dropping support for Python versions to make it clear
+that I don't think we should drop support for 3.3.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Update 2 (9 May 2015 at 11:30 UT):&lt;/strong&gt; Updated the last bullet in the
 take-away points to clarify that we should also make sure we better advertise
 Python 3-only features. For instance Python 3.5 will have a matrix
 multiplication operator which will be very useful especially for Scientific
 Python users. Also, updated the paragraph starting &lt;em&gt;Now I can certainly
 understand this argument&lt;/em&gt; to mention that of course there are other new
-features besides default unicode in Python 3.&lt;/p&gt;</summary><category term="Python"></category></entry><entry><title>The Acknowledgment Generator</title><link href="http://astrofrog.github.com/blog/2014/12/07/acknowledgment-generator/" rel="alternate"></link><updated>2014-12-07T00:00:00+01:00</updated><author><name>Thomas Robitaille</name></author><id>tag:astrofrog.github.com,2014-12-07:blog/2014/12/07/acknowledgment-generator/</id><summary type="html">&lt;p&gt;This week, the 6th installment of the &lt;a href="http://dotastronomy.com/"&gt;.Astronomy&lt;/a&gt;
+features besides default unicode in Python 3.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update 3 (10 May 2015 at 8:30 UT):&lt;/strong&gt; If you are interested in discussing
+the results in this post, there are discussion threads on &lt;a href="https://news.ycombinator.com/item?id=9517392"&gt;Hacker
+News&lt;/a&gt; and
+&lt;a href="http://www.reddit.com/r/Python/comments/35ec96/python_3_in_science_th
+e_great_migration_has_begun/"&gt;Reddit&lt;/a&gt; in addition to the comments section below!&lt;/p&gt;</summary><category term="Python"></category></entry><entry><title>The Acknowledgment Generator</title><link href="http://astrofrog.github.com/blog/2014/12/07/acknowledgment-generator/" rel="alternate"></link><updated>2014-12-07T00:00:00+01:00</updated><author><name>Thomas Robitaille</name></author><id>tag:astrofrog.github.com,2014-12-07:blog/2014/12/07/acknowledgment-generator/</id><summary type="html">&lt;p&gt;This week, the 6th installment of the &lt;a href="http://dotastronomy.com/"&gt;.Astronomy&lt;/a&gt;
 conference series will be taking place in Chicago. I will unfortunately not be
 attending this year, but I was nevertheless motivated today to try and finish
 up a hack that started as a result of discussions with
