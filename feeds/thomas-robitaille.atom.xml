@@ -183,10 +183,9 @@ Python users. Also, updated the paragraph starting &lt;em&gt;Now I can certainly
 understand this argument&lt;/em&gt; to mention that of course there are other new
 features besides default unicode in Python 3.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Update 3 (10 May 2015 at 8:30 UT):&lt;/strong&gt; If you are interested in discussing
-the results in this post, there are discussion threads on &lt;a href="https://news.ycombinator.com/item?id=9517392"&gt;Hacker
-News&lt;/a&gt; and
-&lt;a href="http://www.reddit.com/r/Python/comments/35ec96/python_3_in_science_th
-e_great_migration_has_begun/"&gt;Reddit&lt;/a&gt; in addition to the comments section below!&lt;/p&gt;</summary><category term="Python"></category></entry><entry><title>The Acknowledgment Generator</title><link href="http://astrofrog.github.com/blog/2014/12/07/acknowledgment-generator/" rel="alternate"></link><updated>2014-12-07T00:00:00+01:00</updated><author><name>Thomas Robitaille</name></author><id>tag:astrofrog.github.com,2014-12-07:blog/2014/12/07/acknowledgment-generator/</id><summary type="html">&lt;p&gt;This week, the 6th installment of the &lt;a href="http://dotastronomy.com/"&gt;.Astronomy&lt;/a&gt;
+the results in this post, there are discussion threads on
+&lt;a href="https://news.ycombinator.com/item?id=9517392"&gt;Hacker News&lt;/a&gt; and
+&lt;a href="http://www.reddit.com/r/Python/comments/35ec96/python_3_in_science_the_great_migration_has_begun/"&gt;Reddit&lt;/a&gt; in addition to the comments section below!&lt;/p&gt;</summary><category term="Python"></category></entry><entry><title>The Acknowledgment Generator</title><link href="http://astrofrog.github.com/blog/2014/12/07/acknowledgment-generator/" rel="alternate"></link><updated>2014-12-07T00:00:00+01:00</updated><author><name>Thomas Robitaille</name></author><id>tag:astrofrog.github.com,2014-12-07:blog/2014/12/07/acknowledgment-generator/</id><summary type="html">&lt;p&gt;This week, the 6th installment of the &lt;a href="http://dotastronomy.com/"&gt;.Astronomy&lt;/a&gt;
 conference series will be taking place in Chicago. I will unfortunately not be
 attending this year, but I was nevertheless motivated today to try and finish
 up a hack that started as a result of discussions with
