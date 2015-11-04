@@ -108,21 +108,21 @@ start with the addition of an empty README file).</p>
 <h3>If the first commit is unimportant...</h3>
 <p>... then the situation is fairly easy. You first need to find out the commit
 hash for the first commit in the repository, which you can do with:</p>
-<div class="highlight"><pre><span class="nv">$ </span>git rev-list --all <span class="p">|</span> tail -1
-ec2287e5837386c54fbd082021530aa18c0dcf18
+<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">rev</span><span class="o">-</span><span class="n">list</span> <span class="o">--</span><span class="n">all</span> <span class="o">|</span> <span class="n">tail</span> <span class="o">-</span><span class="mi">1</span>
+<span class="n">ec2287e5837386c54fbd082021530aa18c0dcf18</span>
 </pre></div>
 
 
 <p>In the example above the hash is <code>ec2287e5837386c54fbd082021530aa18c0dcf18</code>,
 but this will be different for you. Now, create an empty branch containing
 only that commit:</p>
-<div class="highlight"><pre><span class="nv">$ </span>git branch empty ec2287e5837386c54fbd082021530aa18c0dcf18
+<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">branch</span> <span class="n">empty</span> <span class="n">ec2287e5837386c54fbd082021530aa18c0dcf18</span>
 </pre></div>
 
 
 <p>This will create, but not switch to, the empty branch. Next push your
 <code>empty</code> branch to GitHub:</p>
-<div class="highlight"><pre><span class="nv">$ </span>git push origin empty
+<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">empty</span>
 </pre></div>
 
 
@@ -135,7 +135,7 @@ top right of the window:</p>
 <p>You can now enter a title and message for the pull request, and invite other
 people to comment on the code. If you make changes to <code>master</code>, you can
 simply push the changes to GitHub as usual:</p>
-<div class="highlight"><pre><span class="nv">$ </span>git push origin master
+<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">master</span>
 </pre></div>
 
 
@@ -157,7 +157,7 @@ clone of your repository, so that if anything goes wrong, you haven't affected
 your usual work repository.</p>
 <p>With that disclaimer in mind, go to the repository you want to do a review
 for, and then create an empty branch that we will call <code>review</code></p>
-<div class="highlight"><pre><span class="nv">$ </span>git checkout --orphan review
+<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">checkout</span> <span class="o">--</span><span class="n">orphan</span> <span class="n">review</span>
 </pre></div>
 
 
@@ -165,52 +165,52 @@ for, and then create an empty branch that we will call <code>review</code></p>
 added to the branch if we were to commit. However, you don't want to do this,
 so remove all the files in the repository in the current branch by first
 unstaging all the files:</p>
-<div class="highlight"><pre><span class="nv">$ </span>git rm -r --cached *
+<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">rm</span> <span class="o">-</span><span class="n">r</span> <span class="o">--</span><span class="n">cached</span> <span class="o">*</span>
 </pre></div>
 
 
 <p>then removing them all:</p>
-<div class="highlight"><pre><span class="nv">$ </span>git clean -fxd
+<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">clean</span> <span class="o">-</span><span class="n">fxd</span>
 </pre></div>
 
 
 <p>Note that any file that was not previously part of the repository will be
 deleted for good, not just from this branch!</p>
 <p>You should now have a nice and empty branch:</p>
-<div class="highlight"><pre><span class="nv">$ </span>git log
-fatal: bad default revision <span class="s1">&#39;HEAD&#39;</span>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">log</span>
+<span class="nl">fatal:</span> <span class="n">bad</span> <span class="k">default</span> <span class="n">revision</span> <span class="err">&#39;</span><span class="n">HEAD</span><span class="err">&#39;</span>
 
-<span class="nv">$ </span>git status
-<span class="c"># On branch review</span>
-<span class="c">#</span>
-<span class="c"># Initial commit</span>
-<span class="c">#</span>
-nothing to commit <span class="o">(</span>create/copy files and use <span class="s2">&quot;git add&quot;</span> to track<span class="o">)</span>
+<span class="err">$</span> <span class="n">git</span> <span class="n">status</span>
+<span class="cp"># On branch review</span>
+<span class="cp">#</span>
+<span class="cp"># Initial commit</span>
+<span class="cp">#</span>
+<span class="n">nothing</span> <span class="n">to</span> <span class="n">commit</span> <span class="p">(</span><span class="n">create</span><span class="o">/</span><span class="n">copy</span> <span class="n">files</span> <span class="n">and</span> <span class="n">use</span> <span class="s">&quot;git add&quot;</span> <span class="n">to</span> <span class="n">track</span><span class="p">)</span>
 </pre></div>
 
 
 <p>You are now ready to set up the review. You should first add a dummy commit
 that contains no files:</p>
-<div class="highlight"><pre><span class="nv">$ </span>git commit --allow-empty -m <span class="s2">&quot;Start of the review&quot;</span>
+<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">commit</span> <span class="o">--</span><span class="n">allow</span><span class="o">-</span><span class="n">empty</span> <span class="o">-</span><span class="n">m</span> <span class="s">&quot;Start of the review&quot;</span>
 </pre></div>
 
 
 <p>Then create a new branch called <code>empty</code> that will contain only this commit:</p>
-<div class="highlight"><pre><span class="nv">$ </span>git branch empty
+<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">branch</span> <span class="n">empty</span>
 </pre></div>
 
 
 <p>This will create a branch with the same empty commit, but will keep on the
 <code>review</code> branch. You can now merge in the changes from the branch we want to
 actually review, say <code>master</code>, into <code>review</code>:</p>
-<div class="highlight"><pre><span class="nv">$ </span>git merge master
+<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">merge</span> <span class="n">master</span>
 </pre></div>
 
 
 <p>You will be asked to provide a merge commit message, and you can just leave
 the default. Next push your <code>review</code> and <code>empty</code> branches to GitHub:</p>
-<div class="highlight"><pre><span class="nv">$ </span>git push origin review
-<span class="nv">$ </span>git push origin empty
+<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">review</span>
+<span class="err">$</span> <span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">empty</span>
 </pre></div>
 
 
@@ -225,9 +225,9 @@ people to comment on the code. Make sure that you switch back to your
 <code>master</code> (or other) branch to implement the changes, and if you then want to
 update the review pull request, you can switch back to <code>review</code> and merge
 the latest changes from <code>master</code>:</p>
-<div class="highlight"><pre><span class="nv">$ </span>git checkout review
-<span class="nv">$ </span>git merge master
-<span class="nv">$ </span>git push origin review
+<div class="highlight"><pre><span class="err">$</span> <span class="n">git</span> <span class="n">checkout</span> <span class="n">review</span>
+<span class="err">$</span> <span class="n">git</span> <span class="n">merge</span> <span class="n">master</span>
+<span class="err">$</span> <span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">review</span>
 </pre></div>
 
 
@@ -287,7 +287,7 @@ easier for people to conduct full reviews! :)</p></div>
   <h1>Tags</h1>
   <ul id="tags">
   <li class="tag">
-    <a href="http://astrofrog.github.com/tag/github.html">GitHub</a>,    <a href="http://astrofrog.github.com/tag/distribution.html">Distribution</a>,    <a href="http://astrofrog.github.com/tag/astropy.html">Astropy</a>,    <a href="http://astrofrog.github.com/tag/dotastro.html">dotastro</a>,    <a href="http://astrofrog.github.com/tag/data-mining.html">Data mining</a>,    <a href="http://astrofrog.github.com/tag/code-review.html">Code Review</a>,    <a href="http://astrofrog.github.com/tag/git.html">Git</a>,    <a href="http://astrofrog.github.com/tag/python.html">Python</a>  </li>
+    <a href="http://astrofrog.github.com/tag/astropy.html">Astropy</a>,    <a href="http://astrofrog.github.com/tag/github.html">GitHub</a>,    <a href="http://astrofrog.github.com/tag/code-review.html">Code Review</a>,    <a href="http://astrofrog.github.com/tag/git.html">Git</a>,    <a href="http://astrofrog.github.com/tag/distribution.html">Distribution</a>,    <a href="http://astrofrog.github.com/tag/python.html">Python</a>,    <a href="http://astrofrog.github.com/tag/dotastro.html">dotastro</a>,    <a href="http://astrofrog.github.com/tag/data-mining.html">Data mining</a>  </li>
   </ul>
   </section>
 
