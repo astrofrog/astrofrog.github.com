@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>.py in the sky</title><link href="http://astrofrog.github.com/" rel="alternate"></link><link href="http://astrofrog.github.com/atom.xml" rel="self"></link><id>http://astrofrog.github.com/</id><updated>2015-05-09T00:00:00+02:00</updated><entry><title>Python 3 in Science: the great migration has begun!</title><link href="http://astrofrog.github.com/blog/2015/05/09/2015-survey-results/" rel="alternate"></link><updated>2015-05-09T00:00:00+02:00</updated><author><name>Thomas Robitaille</name></author><id>tag:astrofrog.github.com,2015-05-09:blog/2015/05/09/2015-survey-results/</id><summary type="html">&lt;p&gt;Back in 2012, &lt;a href="http://astrofrog.github.io/blog/2013/01/13/what-python-installations-are-scientists-using/"&gt;I carried out a survey&lt;/a&gt; to find out which Python, NumPy, and
+<feed xmlns="http://www.w3.org/2005/Atom"><title>.py in the sky</title><link href="http://astrofrog.github.com/" rel="alternate"></link><link href="http://astrofrog.github.com/atom.xml" rel="self"></link><id>http://astrofrog.github.com/</id><updated>2015-11-10T00:00:00+01:00</updated><entry><title>And now for something completely different!</title><link href="http://astrofrog.github.com/blog/2015/11/10/and-now-for-something-completely-different/" rel="alternate"></link><updated>2015-11-10T00:00:00+01:00</updated><author><name>Thomas Robitaille</name></author><id>tag:astrofrog.github.com,2015-11-10:blog/2015/11/10/and-now-for-something-completely-different/</id><summary type="html">&lt;p&gt;I am excited to share that at the end of 2015 I will leave my
+'traditional' academic position and will start a new chapter in my
+professional life! During my time as a researcher, it has become clear
+that what I enjoy most is finding new ways to do science, developing robust
+and re-usable software, and helping and teaching others to do so. Throughout
+my projects, I have constantly tried to promote good research and software
+practices (such as &lt;a href="https://github.com/hyperion-rt/paper-galaxy-rt-model"&gt;reproducible research&lt;/a&gt;),
+and create tools that could be used by others and are applicable beyond my
+specific research area. In the last few years, I have also been incredibly
+lucky to have been involved as one of the co-ordinators and lead developers
+of the &lt;a href="http://www.astropy.org"&gt;Astropy&lt;/a&gt; project. My goal is now to transform
+my passion for scientific software and open science into a full-time
+job, rather than fitting it in between all the usual responsibilities of a
+traditional academic job.&lt;/p&gt;
+
+
+&lt;p&gt;In January, I therefore plan to start working full time as a freelance
+consultant! I hope to work on projects relating to scientific software
+development, data analysis, as well as open science, and will continue to
+provide training workshops for Python and scientific computing. I am
+interested in focusing not only on projects in astronomy, but applying these
+skills to projects in other fields of science, and eventually maybe even to
+projects outside science. This is going to be an exciting transition that I
+hope will open many new opportunities!&lt;/p&gt;
+&lt;p&gt;I will remain involved in the development of many of the
+Python packages I have worked on in the last few years. In particular, I will
+continue to help with the coordination and development of the &lt;a href="http://www.astropy.org"&gt;Astropy&lt;/a&gt; project, and I will continue to support many
+ Python packages that I have developed or co-developed over the years
+(such as &lt;a href="http://aplpy.github.io"&gt;APLpy&lt;/a&gt;,
+&lt;a href="http://wcsaxes.readthedocs.org"&gt;WCSAxes&lt;/a&gt;, &lt;a href="http://www.glueviz.org"&gt;Glue&lt;/a&gt;,
+&lt;a href="http://www.dendrograms.org"&gt;astrodendro&lt;/a&gt;, and many more).&lt;/p&gt;
+&lt;p&gt;Until the end of the year, I will be wrapping up existing research
+projects. After this, I will no longer invest a significant amount
+of time into projects from a research point of view (but will of course be
+open to opportunities to contribute to projects as a consultant on matters
+relating to software development and data analysis). I will continue
+to support the &lt;a href="http://www.hyperion-rt.org/"&gt;Hyperion&lt;/a&gt; radiative
+transfer package and will be happy to help anyone interested in contributing
+new features. I would love for more developers to get involved in this
+project, so please get in touch if you are interested in helping!&lt;/p&gt;
+&lt;p&gt;I will save my thoughts about the future of software in astronomy for another time, in
+particular about the lack of stable academic career paths for people
+interested in &lt;em&gt;research&lt;/em&gt; software development (as opposed to telescope and
+instrumentation-related software development, which is at least supported by
+some institutes and/or projects, although also not enough). For now, suffice to say that any
+change in this respect cannot happen fast enough from my point of view, and I
+am very much looking forward to continuing to try and impact the way science
+is done, from outside the traditionally followed path.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="monty_python_foot" src="/images/foot.jpg" /&gt;&lt;/p&gt;</summary><category term="Career"></category></entry><entry><title>Python 3 in Science: the great migration has begun!</title><link href="http://astrofrog.github.com/blog/2015/05/09/2015-survey-results/" rel="alternate"></link><updated>2015-05-09T00:00:00+02:00</updated><author><name>Thomas Robitaille</name></author><id>tag:astrofrog.github.com,2015-05-09:blog/2015/05/09/2015-survey-results/</id><summary type="html">&lt;p&gt;Back in 2012, &lt;a href="http://astrofrog.github.io/blog/2013/01/13/what-python-installations-are-scientists-using/"&gt;I carried out a survey&lt;/a&gt; to find out which Python, NumPy, and
 SciPy versions scientists are currently using for their daily work, in order
 to better understand which versions should be supported. The main finding was that a large fraction of people have
 reasonably up-to-date Python installations, although virtually no-one was
