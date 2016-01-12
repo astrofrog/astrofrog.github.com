@@ -72,9 +72,9 @@ following kind of syntax:&lt;/p&gt;
 Python 2 code. Oops!&lt;/p&gt;
 &lt;p&gt;Another example of problematic code is the following:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;six&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PY2&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-    &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;
-&lt;span class="n"&gt;elif&lt;/span&gt; &lt;span class="n"&gt;six&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PY3&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;
+&lt;span class="n"&gt;elif&lt;/span&gt; &lt;span class="n"&gt;six&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PY3&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
