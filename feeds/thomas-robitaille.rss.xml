@@ -79,17 +79,9 @@ Python 2 code. Oops!&lt;/p&gt;
 
 
 &lt;p&gt;In this case, no code will get executed on Python 4 at all!&lt;/p&gt;
-&lt;p&gt;To avoid this, it's critical that we avoid treating Python 3 as a special
-case in these kinds of &lt;code&gt;if&lt;/code&gt; statements:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;six&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PY3&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-    &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;
-&lt;span class="nl"&gt;else:&lt;/span&gt;
-    &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;and instead treat Python &lt;strong&gt;2&lt;/strong&gt; as the special case, and default to Python 3
-code otherwise:&lt;/p&gt;
+&lt;p&gt;To avoid this, it's critical that we avoid treating Python 3 as a special case
+in these kinds of &lt;code&gt;if&lt;/code&gt; statements and instead treat Python &lt;strong&gt;2&lt;/strong&gt; as the
+special case, and default to Python 3 code otherwise:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;six&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PY2&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;
 &lt;span class="nl"&gt;else:&lt;/span&gt;
