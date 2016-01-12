@@ -150,7 +150,19 @@ special case, and default to Python 3 code otherwise:</p>
 
 <p>It's a small change, but it will save a lot of headaches down the road. So if
 you develop a Python package, please check now to make sure that your code will
-be Python 4-compatible!</p></div>
+be Python 4-compatible!</p>
+<p><strong>Update:</strong> of course, the same logic applies even if not using the six
+package. If doing version comparisons using <code>sys.version_info</code>, make sure you
+<strong>don't</strong> do:</p>
+<div class="highlight"><pre><span class="k">if</span> <span class="n">sys</span><span class="p">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">3</span><span class="o">:</span>
+    <span class="err">#</span> <span class="n">Python</span> <span class="mi">3</span> <span class="n">code</span>
+<span class="nl">else:</span>
+    <span class="err">#</span> <span class="n">Python</span> <span class="mi">2</span> <span class="n">code</span>
+</pre></div>
+
+
+<p>Either swap the if statement and check for Python 2, or make sure you use
+<code>&gt;=</code>.</p></div>
     <footer>
 <p class="meta">
   <span class="byline author vcard">
@@ -198,7 +210,7 @@ be Python 4-compatible!</p></div>
   <h1>Tags</h1>
   <ul id="tags">
   <li class="tag">
-    <a href="http://astrofrog.github.com/tag/astropy.html">Astropy</a>,    <a href="http://astrofrog.github.com/tag/distribution.html">Distribution</a>,    <a href="http://astrofrog.github.com/tag/career.html">Career</a>,    <a href="http://astrofrog.github.com/tag/git.html">Git</a>,    <a href="http://astrofrog.github.com/tag/python.html">Python</a>,    <a href="http://astrofrog.github.com/tag/data-mining.html">Data mining</a>,    <a href="http://astrofrog.github.com/tag/dotastro.html">dotastro</a>,    <a href="http://astrofrog.github.com/tag/github.html">GitHub</a>,    <a href="http://astrofrog.github.com/tag/code-review.html">Code Review</a>  </li>
+    <a href="http://astrofrog.github.com/tag/dotastro.html">dotastro</a>,    <a href="http://astrofrog.github.com/tag/data-mining.html">Data mining</a>,    <a href="http://astrofrog.github.com/tag/github.html">GitHub</a>,    <a href="http://astrofrog.github.com/tag/distribution.html">Distribution</a>,    <a href="http://astrofrog.github.com/tag/code-review.html">Code Review</a>,    <a href="http://astrofrog.github.com/tag/career.html">Career</a>,    <a href="http://astrofrog.github.com/tag/python.html">Python</a>,    <a href="http://astrofrog.github.com/tag/git.html">Git</a>,    <a href="http://astrofrog.github.com/tag/astropy.html">Astropy</a>  </li>
   </ul>
   </section>
 
