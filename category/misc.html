@@ -55,29 +55,26 @@
   		<article>
 <header>
       <h1 class="entry-title">
-        <a href="http://astrofrog.github.com/blog/2013/01/13/what-python-installations-are-scientists-using/">What Python installations are scientists using?</a>
+        <a href="http://astrofrog.github.com/blog/2016/01/12/stop-writing-python-4-incompatible-code/">Stop writing code that will break on Python 4!</a>
       </h1>
-      <p class="meta"><time datetime="2013-01-13T10:10:00+01:00" pubdate>Sun 13 January 2013</time></p>
+      <p class="meta"><time datetime="2016-01-12T00:00:00+01:00" pubdate>Tue 12 January 2016</time></p>
 </header>
 
-  <div class="entry-content"><p>Back in November 2012, I
-<a href="https://twitter.com/astrofrog/status/269743084215103488">asked</a> Python
-users in Science to fill out a survey to find out what <a href="http://www.python.org">Python</a>, <a href="http://www.numpy.org">Numpy</a>, and
-<a href="http://www.scipy.org">Scipy</a> versions they were using, and how they maintain their installation. My motivation for this was to collect quantitative
-information to inform discussions amongst developers regarding which versions
-to support, because those discussions are usually based only on guessing and
-personal experience. In particular, there has been some discussion in the
-<a href="http://www.astropy.org">Astropy</a> project regarding whether we should drop
-support for Numpy 1.4, but we had no quantitative information about whether
-this would affect many users (which motivated this study).</p>
-<p>In this post, I'll give an overview of the results, as well as access to the
-(anonymized) raw data. First, I should mention that given my area of research
-and networks, the only community I obtained significant data are Astronomers,
-so the results I present here only include these (though I also provide the
-raw data for the remaining users for anyone interested).</p>
+  <div class="entry-content"><p>With the end of support for Python 2 on the horizon
+(<a href="https://www.python.org/dev/peps/pep-0373/">in 2020</a>), many package developers
+have made their packages compatible with both Python 2 and Python 3 by using
+constructs such as:</p>
+<div class="highlight"><pre><span class="k">if</span> <span class="n">sys</span><span class="p">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="o">:</span>
+    <span class="err">#</span> <span class="n">Python</span> <span class="mi">2</span> <span class="n">code</span>
+<span class="nl">else:</span>
+    <span class="err">#</span> <span class="n">Python</span> <span class="mi">3</span> <span class="n">code</span>
+</pre></div>
+
+
+<p>in places where things have changed between Python 2 and 3.</p>
 </div>
   <footer>
-    <a rel="full-article" href="http://astrofrog.github.com/blog/2013/01/13/what-python-installations-are-scientists-using/">Read On &crarr;</a>
+    <a rel="full-article" href="http://astrofrog.github.com/blog/2016/01/12/stop-writing-python-4-incompatible-code/">Read On &crarr;</a>
   </footer>
   		</article>
 <div class="pagination">
@@ -94,7 +91,7 @@ raw data for the remaining users for anyone interested).</p>
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
       <li class="post">
-          <a href="http://astrofrog.github.com/blog/2013/01/13/what-python-installations-are-scientists-using/">What Python installations are scientists using?</a>
+          <a href="http://astrofrog.github.com/blog/2016/01/12/stop-writing-python-4-incompatible-code/">Stop writing code that will break on Python 4!</a>
       </li>
     </ul>
   </section>

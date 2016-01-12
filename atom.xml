@@ -1,5 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>.py in the sky</title><link href="http://astrofrog.github.com/" rel="alternate"></link><link href="http://astrofrog.github.com/atom.xml" rel="self"></link><id>http://astrofrog.github.com/</id><updated>2015-11-10T00:00:00+01:00</updated><entry><title>And now for something completely different!</title><link href="http://astrofrog.github.com/blog/2015/11/10/and-now-for-something-completely-different/" rel="alternate"></link><updated>2015-11-10T00:00:00+01:00</updated><author><name>Thomas Robitaille</name></author><id>tag:astrofrog.github.com,2015-11-10:blog/2015/11/10/and-now-for-something-completely-different/</id><summary type="html">&lt;p&gt;I am excited to share that at the end of 2015 I will leave my
+<feed xmlns="http://www.w3.org/2005/Atom"><title>.py in the sky</title><link href="http://astrofrog.github.com/" rel="alternate"></link><link href="http://astrofrog.github.com/atom.xml" rel="self"></link><id>http://astrofrog.github.com/</id><updated>2016-01-12T00:00:00+01:00</updated><entry><title>Stop writing code that will break on Python 4!</title><link href="http://astrofrog.github.com/blog/2016/01/12/stop-writing-python-4-incompatible-code/" rel="alternate"></link><updated>2016-01-12T00:00:00+01:00</updated><author><name>Thomas Robitaille</name></author><id>tag:astrofrog.github.com,2016-01-12:blog/2016/01/12/stop-writing-python-4-incompatible-code/</id><summary type="html">&lt;p&gt;With the end of support for Python 2 on the horizon
+(&lt;a href="https://www.python.org/dev/peps/pep-0373/"&gt;in 2020&lt;/a&gt;), many package developers
+have made their packages compatible with both Python 2 and Python 3 by using
+constructs such as:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;version_info&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;
+&lt;span class="nl"&gt;else:&lt;/span&gt;
+    &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;in places where things have changed between Python 2 and 3.&lt;/p&gt;
+
+
+&lt;p&gt;The &lt;a href="https://pythonhosted.org/six/"&gt;six&lt;/a&gt; package simplifies many of the
+differences by providing wrappers that behave the same on Python 2 and 3. For
+instance, iterating over dictionary keys is normally done with:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;item&lt;/span&gt; &lt;span class="n"&gt;in&lt;/span&gt; &lt;span class="n"&gt;dictionary&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;iteritems&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt; &lt;span class="n"&gt;here&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;in Python 2 and:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;item&lt;/span&gt; &lt;span class="n"&gt;in&lt;/span&gt; &lt;span class="n"&gt;dictionary&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;items&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt; &lt;span class="n"&gt;here&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;in Python 3. With &lt;a href="https://pythonhosted.org/six/"&gt;six&lt;/a&gt;, one can simply do:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;import&lt;/span&gt; &lt;span class="n"&gt;six&lt;/span&gt;
+
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;item&lt;/span&gt; &lt;span class="n"&gt;in&lt;/span&gt; &lt;span class="n"&gt;six&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;iteritems&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dictionary&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt; &lt;span class="n"&gt;here&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and this will work seamlessly both with Python 2 and 3. However, there are some
+more complex cases where one has to resort to the type of &lt;code&gt;if&lt;/code&gt; statement shown at
+the top of this post. The &lt;a href="https://pythonhosted.org/six/"&gt;six&lt;/a&gt; package again
+makes this slightly easier by providing &lt;code&gt;PY2&lt;/code&gt; and &lt;code&gt;PY3&lt;/code&gt; boolean constants:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;six&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PY2&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;
+&lt;span class="nl"&gt;else:&lt;/span&gt;
+    &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;So far so good.&lt;/p&gt;
+&lt;p&gt;This brings me to the main point of this post. We don't
+really know yet what Python 4 will look like, but we can be pretty sure that
+the transition from Python 3 to Python 4 will be a lot smoother and will likely
+&lt;a href="https://opensource.com/life/14/9/why-python-4-wont-be-python-3"&gt;not be backward-incompatible in the same way as Python 3 was&lt;/a&gt;. If that's
+the case, we should be able to use packages developed for Python 2 and 3
+seamlessly with Python 4. Right?...&lt;/p&gt;
+&lt;p&gt;Nope! By searching on GitHub, I found ~200,000 matches for the
+following kind of syntax:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;six&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PY3&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;
+&lt;span class="nl"&gt;else:&lt;/span&gt;
+    &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;See the problem? In &lt;code&gt;six&lt;/code&gt;, &lt;code&gt;PY3&lt;/code&gt; is defined as:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;PY3&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;version_info&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;so that once Python 4 is out, both &lt;code&gt;PY2&lt;/code&gt; and &lt;code&gt;PY3&lt;/code&gt; will be (correctly)
+&lt;code&gt;False&lt;/code&gt; and the above if statement will execute the &lt;code&gt;else&lt;/code&gt; statement for
+Python 2 code. Oops!&lt;/p&gt;
+&lt;p&gt;To avoid this, it's critical that we avoid treating Python 3 as the special
+case in these kinds of &lt;code&gt;if&lt;/code&gt; statements:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;six&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PY3&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;
+&lt;span class="nl"&gt;else:&lt;/span&gt;
+    &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and instead treat Python &lt;strong&gt;2&lt;/strong&gt; as the special case, and default to Python 3
+code otherwise:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;six&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PY2&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;
+&lt;span class="nl"&gt;else:&lt;/span&gt;
+    &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;It's a small change, but it will save a lot of headaches down the road. So if
+you develop a Python package, please check now to make sure that your code will
+be Python 4-compatible!&lt;/p&gt;</summary><category term="Python"></category></entry><entry><title>And now for something completely different!</title><link href="http://astrofrog.github.com/blog/2015/11/10/and-now-for-something-completely-different/" rel="alternate"></link><updated>2015-11-10T00:00:00+01:00</updated><author><name>Thomas Robitaille</name></author><id>tag:astrofrog.github.com,2015-11-10:blog/2015/11/10/and-now-for-something-completely-different/</id><summary type="html">&lt;p&gt;I am excited to share that at the end of 2015 I will leave my
 'traditional' academic position and will start a new chapter in my
 professional life! During my time as a researcher, it has become clear
 that what I enjoy most is finding new ways to do science, developing robust

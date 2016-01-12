@@ -54,66 +54,109 @@
 <div>
   <article class="hentry" role="article">
 <header>
-      <h1 class="entry-title">And now for something completely different!</h1>
-      <p class="meta"><time datetime="2015-11-10T00:00:00+01:00" pubdate>Tue 10 November 2015</time></p>
+      <h1 class="entry-title">Stop writing code that will break on Python 4!</h1>
+      <p class="meta"><time datetime="2016-01-12T00:00:00+01:00" pubdate>Tue 12 January 2016</time></p>
 </header>
 
-  <div class="entry-content"><p>I am excited to share that at the end of 2015 I will leave my
-'traditional' academic position and will start a new chapter in my
-professional life! During my time as a researcher, it has become clear
-that what I enjoy most is finding new ways to do science, developing robust
-and re-usable software, and helping and teaching others to do so. Throughout
-my projects, I have constantly tried to promote good research and software
-practices (such as <a href="https://github.com/hyperion-rt/paper-galaxy-rt-model">reproducible research</a>),
-and create tools that could be used by others and are applicable beyond my
-specific research area. In the last few years, I have also been incredibly
-lucky to have been involved as one of the co-ordinators and lead developers
-of the <a href="http://www.astropy.org">Astropy</a> project. My goal is now to transform
-my passion for scientific software and open science into a full-time
-job, rather than fitting it in between all the usual responsibilities of a
-traditional academic job.</p>
+  <div class="entry-content"><p>With the end of support for Python 2 on the horizon
+(<a href="https://www.python.org/dev/peps/pep-0373/">in 2020</a>), many package developers
+have made their packages compatible with both Python 2 and Python 3 by using
+constructs such as:</p>
+<div class="highlight"><pre><span class="k">if</span> <span class="n">sys</span><span class="p">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="o">:</span>
+    <span class="err">#</span> <span class="n">Python</span> <span class="mi">2</span> <span class="n">code</span>
+<span class="nl">else:</span>
+    <span class="err">#</span> <span class="n">Python</span> <span class="mi">3</span> <span class="n">code</span>
+</pre></div>
 
 
-<p>In January, I therefore plan to start working full time as a freelance
-consultant! I hope to work on projects relating to scientific software
-development, data analysis, as well as open science, and will continue to
-provide training workshops for Python and scientific computing. I am
-interested in focusing not only on projects in astronomy, but applying these
-skills to projects in other fields of science, and eventually maybe even to
-projects outside science. This is going to be an exciting transition that I
-hope will open many new opportunities!</p>
-<p>I will remain involved in the development of many of the
-Python packages I have worked on in the last few years. In particular, I will
-continue to help with the coordination and development of the <a href="http://www.astropy.org">Astropy</a> project, and I will continue to support many
- Python packages that I have developed or co-developed over the years
-(such as <a href="http://aplpy.github.io">APLpy</a>,
-<a href="http://wcsaxes.readthedocs.org">WCSAxes</a>, <a href="http://www.glueviz.org">Glue</a>,
-<a href="http://www.dendrograms.org">astrodendro</a>, and many more).</p>
-<p>Until the end of the year, I will be wrapping up existing research
-projects. After this, I will no longer invest a significant amount
-of time into projects from a research point of view (but will of course be
-open to opportunities to contribute to projects as a consultant on matters
-relating to software development and data analysis). I will continue
-to support the <a href="http://www.hyperion-rt.org/">Hyperion</a> radiative
-transfer package and will be happy to help anyone interested in contributing
-new features. I would love for more developers to get involved in this
-project, so please get in touch if you are interested in helping!</p>
-<p>I will save my thoughts about the future of software in astronomy for another time, in
-particular about the lack of stable academic career paths for people
-interested in <em>research</em> software development (as opposed to telescope and
-instrumentation-related software development, which is at least supported by
-some institutes and/or projects, although also not enough). For now, suffice to say that any
-change in this respect cannot happen fast enough from my point of view, and I
-am very much looking forward to continuing to try and impact the way science
-is done, from outside the traditionally followed path.</p>
-<p><img alt="monty_python_foot" src="/images/foot.jpg" /></p></div>
+<p>in places where things have changed between Python 2 and 3.</p>
+
+
+<p>The <a href="https://pythonhosted.org/six/">six</a> package simplifies many of the
+differences by providing wrappers that behave the same on Python 2 and 3. For
+instance, iterating over dictionary keys is normally done with:</p>
+<div class="highlight"><pre><span class="k">for</span> <span class="n">item</span> <span class="n">in</span> <span class="n">dictionary</span><span class="p">.</span><span class="n">iteritems</span><span class="p">()</span><span class="o">:</span>
+    <span class="err">#</span> <span class="n">code</span> <span class="n">here</span>
+</pre></div>
+
+
+<p>in Python 2 and:</p>
+<div class="highlight"><pre><span class="k">for</span> <span class="n">item</span> <span class="n">in</span> <span class="n">dictionary</span><span class="p">.</span><span class="n">items</span><span class="p">()</span><span class="o">:</span>
+    <span class="err">#</span> <span class="n">code</span> <span class="n">here</span>
+</pre></div>
+
+
+<p>in Python 3. With <a href="https://pythonhosted.org/six/">six</a>, one can simply do:</p>
+<div class="highlight"><pre><span class="n">import</span> <span class="n">six</span>
+
+<span class="k">for</span> <span class="n">item</span> <span class="n">in</span> <span class="n">six</span><span class="p">.</span><span class="n">iteritems</span><span class="p">(</span><span class="n">dictionary</span><span class="p">)</span><span class="o">:</span>
+    <span class="err">#</span> <span class="n">code</span> <span class="n">here</span>
+</pre></div>
+
+
+<p>and this will work seamlessly both with Python 2 and 3. However, there are some
+more complex cases where one has to resort to the type of <code>if</code> statement shown at
+the top of this post. The <a href="https://pythonhosted.org/six/">six</a> package again
+makes this slightly easier by providing <code>PY2</code> and <code>PY3</code> boolean constants:</p>
+<div class="highlight"><pre><span class="k">if</span> <span class="n">six</span><span class="p">.</span><span class="n">PY2</span><span class="o">:</span>
+    <span class="err">#</span> <span class="n">Python</span> <span class="mi">2</span> <span class="n">code</span>
+<span class="nl">else:</span>
+    <span class="err">#</span> <span class="n">Python</span> <span class="mi">3</span> <span class="n">code</span>
+</pre></div>
+
+
+<p>So far so good.</p>
+<p>This brings me to the main point of this post. We don't
+really know yet what Python 4 will look like, but we can be pretty sure that
+the transition from Python 3 to Python 4 will be a lot smoother and will likely
+<a href="https://opensource.com/life/14/9/why-python-4-wont-be-python-3">not be backward-incompatible in the same way as Python 3 was</a>. If that's
+the case, we should be able to use packages developed for Python 2 and 3
+seamlessly with Python 4. Right?...</p>
+<p>Nope! By searching on GitHub, I found ~200,000 matches for the
+following kind of syntax:</p>
+<div class="highlight"><pre><span class="k">if</span> <span class="n">six</span><span class="p">.</span><span class="n">PY3</span><span class="o">:</span>
+    <span class="err">#</span> <span class="n">Python</span> <span class="mi">3</span> <span class="n">code</span>
+<span class="nl">else:</span>
+    <span class="err">#</span> <span class="n">Python</span> <span class="mi">2</span> <span class="n">code</span>
+</pre></div>
+
+
+<p>See the problem? In <code>six</code>, <code>PY3</code> is defined as:</p>
+<div class="highlight"><pre><span class="n">PY3</span> <span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">3</span>
+</pre></div>
+
+
+<p>so that once Python 4 is out, both <code>PY2</code> and <code>PY3</code> will be (correctly)
+<code>False</code> and the above if statement will execute the <code>else</code> statement for
+Python 2 code. Oops!</p>
+<p>To avoid this, it's critical that we avoid treating Python 3 as the special
+case in these kinds of <code>if</code> statements:</p>
+<div class="highlight"><pre><span class="k">if</span> <span class="n">six</span><span class="p">.</span><span class="n">PY3</span><span class="o">:</span>
+    <span class="err">#</span> <span class="n">Python</span> <span class="mi">3</span> <span class="n">code</span>
+<span class="nl">else:</span>
+    <span class="err">#</span> <span class="n">Python</span> <span class="mi">2</span> <span class="n">code</span>
+</pre></div>
+
+
+<p>and instead treat Python <strong>2</strong> as the special case, and default to Python 3
+code otherwise:</p>
+<div class="highlight"><pre><span class="k">if</span> <span class="n">six</span><span class="p">.</span><span class="n">PY2</span><span class="o">:</span>
+    <span class="err">#</span> <span class="n">Python</span> <span class="mi">2</span> <span class="n">code</span>
+<span class="nl">else:</span>
+    <span class="err">#</span> <span class="n">Python</span> <span class="mi">3</span> <span class="n">code</span>
+</pre></div>
+
+
+<p>It's a small change, but it will save a lot of headaches down the road. So if
+you develop a Python package, please check now to make sure that your code will
+be Python 4-compatible!</p></div>
     <footer>
 <p class="meta">
   <span class="byline author vcard">
     Posted by <span class="fn">Thomas Robitaille</span>
   </span>
-<time datetime="2015-11-10T00:00:00+01:00" pubdate>Tue 10 November 2015</time>  <span class="categories">
-    <a class="category" href="http://astrofrog.github.com/tag/career.html">Career</a>
+<time datetime="2016-01-12T00:00:00+01:00" pubdate>Tue 12 January 2016</time>  <span class="categories">
+    <a class="category" href="http://astrofrog.github.com/tag/python.html">Python</a>
   </span>
 </p>    </footer>
   </article>
@@ -191,9 +234,9 @@ is done, from outside the traditionally followed path.</p>
     </script>
 	<script type="text/javascript">
 	  var disqus_shortname = 'pyinthesky';
-          var disqus_identifier = 'http://astrofrog.github.com/blog/2015/11/10/and-now-for-something-completely-different/';
-          var disqus_url = 'http://astrofrog.github.com/blog/2015/11/10/and-now-for-something-completely-different/';
-          var disqus_title = 'And now for something completely different!';
+          var disqus_identifier = 'http://astrofrog.github.com/blog/2016/01/12/stop-writing-python-4-incompatible-code/';
+          var disqus_url = 'http://astrofrog.github.com/blog/2016/01/12/stop-writing-python-4-incompatible-code/';
+          var disqus_title = 'Stop writing code that will break on Python 4!';
 	  (function() {
 	    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 	    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
