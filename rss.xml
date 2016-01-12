@@ -67,7 +67,7 @@ following kind of syntax:&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;so that once Python 4 is out, both &lt;code&gt;PY2&lt;/code&gt; and &lt;code&gt;PY3&lt;/code&gt; will be (correctly)
+&lt;p&gt;so that once Python 4 is used, both &lt;code&gt;PY2&lt;/code&gt; and &lt;code&gt;PY3&lt;/code&gt; will be (correctly)
 &lt;code&gt;False&lt;/code&gt; and the above if statement will execute the &lt;code&gt;else&lt;/code&gt; statement for
 Python 2 code. Oops!&lt;/p&gt;
 &lt;p&gt;To avoid this, it's critical that we avoid treating Python 3 as the special
