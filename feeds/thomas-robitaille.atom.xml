@@ -53,7 +53,7 @@ the transition from Python 3 to Python 4 will be a lot smoother and will likely
 &lt;a href="https://opensource.com/life/14/9/why-python-4-wont-be-python-3"&gt;not be backward-incompatible in the same way as Python 3 was&lt;/a&gt;. If that's
 the case, we should be able to use packages developed for Python 2 and 3
 seamlessly with Python 4. Right?...&lt;/p&gt;
-&lt;p&gt;Nope! By searching on GitHub, I found ~200,000 matches for the
+&lt;p&gt;Not quite! By searching on GitHub, I found almost 300,000 matches for the
 following kind of syntax:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;six&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;PY3&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="n"&gt;Python&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="n"&gt;code&lt;/span&gt;
